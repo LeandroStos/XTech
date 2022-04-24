@@ -1,16 +1,16 @@
-<center> <img src="D:\Server\XTech\.github\XTECH.png" alt="XTECH" style="zoom:33%;" /></center>
+<center> <img src=".github\logo.png" alt="XTECH" style="zoom:33%;" /></center>
 
 ---
 
 <p  align="center">
-	<a  href="#🏗️-projeto">🏗️ Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp
-	<a  href="#💻-como-está-ficando-?">💻 Como está ficando ?</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-	<a  href="#🎒-Quem-fez-?">🎒 Quem fez ?</a>
+	<a  href="#:building_construction:-Projeto">🏗️ Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp
+	<a  href="#:desktop_computer:-Como-está-ficando ?">💻 Como está ficando ?</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+	<a  href="#:studio_microphone:-Quem-fez ?">🎒 Quem fez ?</a>
 </p>
 
 ---
 
-## 🛣️ RoadMap
+## :package: RoadMap
 
 Novos caminhos serão traçados toda a semana durante as aulas.
 *New paths will be traced throughout the week during classes.*
@@ -21,7 +21,7 @@ Novos caminhos serão traçados toda a semana durante as aulas.
 
 ---
 
-## 🏗️ Projeto
+## :building_construction: Projeto
 
 O objetivo da **XTech** é facilitar a busca por empregos em áreas da tecnologia, transformando a busca por empregos para desenvolvimentos em algo dinâmico. O projeto que faz parte do curso da Digital House parte da idéia de facilitar tanto para o candidato quanto para o recrutador a busca e postagem de vagas.
 
@@ -29,14 +29,14 @@ O objetivo da **XTech** é facilitar a busca por empregos em áreas da tecnologi
 
 ---
 
-## 💻 Como está ficando ?
+## :desktop_computer: Como está ficando ?
 
 <p  align="center">
 <img  alt="Index"  src=".github/index.png"  width="100%">
 </p>
 ---
 
-## 🎒 Quem fez ?
+## :studio_microphone: Quem fez ?
 
 <table>
     <tr>
