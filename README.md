@@ -1,4 +1,4 @@
-<center> <img src=".github\logo.png" alt="XTECH" style="zoom:33%;" /></center>
+<center> <img src=".github\logo.png" alt="XTECH" width="150</center>
 
 ---
 
@@ -34,6 +34,7 @@ O objetivo da **XTech** é facilitar a busca por empregos em áreas da tecnologi
 <p  align="center">
 <img  alt="Index"  src=".github/index.png"  width="100%">
 </p>
+	
 ---
 
 ## :studio_microphone: Quem fez ?
