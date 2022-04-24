@@ -6,13 +6,6 @@
 	
 </p>
 
-
-<p  align="center">
-	<a  href="#:building_construction:-Projeto">🏗️ Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp
-	<a  href="#:desktop_computer:-Como-está-ficando ?">💻 Como está ficando ?</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-	<a  href="#:studio_microphone:-Quem-fez ?">🎒 Quem fez ?</a>
-</p>
-
 ---
 
 
