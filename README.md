@@ -1,4 +1,4 @@
-<center> <img src=".github\logo.png" alt="XTECH" width="150</center>
+<center> <img src=".github\logo.png" alt="XTECH" width="150></center>
 
 ---
 
