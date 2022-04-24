@@ -32,7 +32,7 @@ Novos caminhos serão traçados toda a semana durante as aulas.
 
 O objetivo da **XTech** é facilitar a busca por empregos em áreas da tecnologia, transformando a busca por empregos para desenvolvimentos em algo dinâmico. O projeto que faz parte do curso da Digital House parte da idéia de facilitar tanto para o candidato quanto para o recrutador a busca e postagem de vagas.
 
-*The **XTECH** goal is facilitate the search for jobs in technological areas, transforming the search for jobs for developments in something dynamic. The project is part of the course of the Digital House is part of the idea of facilitating both the candidate and for the recruiter the search and post vacancies.*
+*The **XTECH** goal is facilitate the search for jobs in technological areas, transforming the search for jobs for developments in something dynamic. The project is part of the course of the Digital House is part of the idea of facilitating both the candidate and for the recruiter the search and post jobs.*
 
 ---
 
