@@ -1,5 +1,3 @@
----
-
 <p align="center" >
 	
 <img src=".github\logo.png" alt="XTECH" width="150"/>
