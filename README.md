@@ -1,8 +1,11 @@
+---
+
 <p align="center" >
+	
 <img src=".github\logo.png" alt="XTECH" width="150"/>
+	
 </p>
 
----
 
 <p  align="center">
 	<a  href="#:building_construction:-Projeto">🏗️ Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp
@@ -12,9 +15,11 @@
 
 ---
 
+
 ## :package: RoadMap
 
 Novos caminhos serão traçados toda a semana durante as aulas.
+
 *New paths will be traced throughout the week during classes.*
 
  - [x] Wireframe
