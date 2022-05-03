@@ -1,12 +1,14 @@
-*{
+* {
     width: 0;
     margin: 0;
 }
 
-.none {
-    display: none;
+body {
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-size: 1200px;
 }
 
-header {
-    width: ;
+.none {
+    display: none;
 }
