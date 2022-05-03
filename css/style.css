@@ -3,12 +3,14 @@
     margin: 0;
 }
 
+/*body com imagem*/
 body {
     background-image: url(../images/bg.png);
     background-repeat: no-repeat;
     background-size: 1200px;
 }
 
+/*para as coisas não aparecerem*/
 .none {
     display: none;
 }
