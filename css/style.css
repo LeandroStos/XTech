@@ -1,16 +1,193 @@
+/*
+
 * {
     width: 0;
     margin: 0;
 }
 
-/*body com imagem*/
+body com imagem
 body {
     background-image: url(../images/bg.png);
     background-repeat: no-repeat;
     background-size: 1200px;
 }
 
-/*para as coisas não aparecerem*/
+para as coisas não aparecerem
 .none {
     display: none;
+}
+*/
+*{  
+    padding: 0;
+    margin: 0;
+  }
+
+  html,body{
+      box-sizing: border-box;
+      height: 100%;
+      overflow: hidden;
+  }
+
+  body{
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-size: 1860px;
+  }
+
+ header{
+     background: linear-gradient(269.83deg, #101527 8.79%, #101527 65.48%);
+     color: white;
+     height: 76px;
+     width: 100vw;
+ }
+/* Acima estão as configurações padrão de toda página */
+
+/* Abaixo segue as configurações do header e dos elementos que compoem o header*/
+ .cabecalhoInternas{
+    padding-left: 150px;
+    padding-right: 230px;
+    padding-top: 30px;
+ }
+
+ .menuDireita{
+     float:right;
+ }
+
+ ul{
+     display: flex;
+ }
+
+ li{ 
+     list-style-type: none;
+     padding-right: 22px;
+     text-decoration: none;
+ }
+
+ a{
+     color: white;
+     text-decoration: none;
+ }
+
+ /* Aqui segue as configurações que compoem a section que é elemento filho da main */
+section .container-1{
+    align-items: center;
+    height: 50%;
+    position: relative;
+    width: 100vw;
+}
+
+.center{
+    align-items: center;
+    height: 255px;
+    margin-left: 488px;
+    margin-right: 488px;
+    margin-top: 200px;
+    padding-top: 20px;
+    width: 944px;
+}
+
+h1{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+
+.barra-1{
+    display: inline-block;
+    padding-left: 244px;
+    padding-right: 15px;
+    padding-top: 30px;
+}
+
+.barra-2{
+    display: inline-block;
+}
+
+.barra-1 input{
+    border: none;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background-color: rgba(68,213,197,15%);
+    opacity: 0.5;
+    height: 30px;
+    width: 180px;
+}
+
+
+input[value]{
+    color: white;
+    padding-left: 25px;
+}
+
+.barra-2 input{
+    border: none;
+    border-bottom-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    background-color: rgba(68,213,197,15%);
+    height: 30px;
+    margin-right: 8px;
+    margin-right: 8px;
+    opacity: 0.5;
+    width: 180px;
+}
+
+button{
+    border: none;
+    border-radius: 8px;
+    background-image: linear-gradient(to bottom right, #00DEBD, #00BCDA);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    height: 30px;
+    padding-left: 20px;
+    padding-left: 5px;
+    text-align: center;
+    width: 100px;
+}
+
+.lembrete{
+    color: white;
+    padding-left: 255px;
+    padding-top: 10px;
+}
+
+/* Configurações no footer */
+footer{
+    background: linear-gradient(269.83deg, #101527 8.79%, #101527 65.48%);
+    height: 76px;
+    margin-top: 335px;
+    position: absolute;
+    width: 100%;        
+}
+
+footer .barraRodape{
+    display: inline-block;
+    height: 40px;
+    margin-left: 800px;
+    margin-top: 12px;
+    width: 300px;
+}
+
+.img-1{
+    color: #00BCDA;
+    display: inline-block;
+    font-size: 33px;
+    padding-left: 105px;
+    padding-right: 5px;
+    padding-top: 5px;
+    
+}
+
+.img-2{
+    color: #00BCDA;
+    display: inline-block;
+    font-size: 33px;
+    padding-right: 5px;
+}
+
+.img-3{
+    color: #00BCDA;
+    display: inline-block;
+    font-size: 33px;
 }
