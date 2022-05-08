@@ -191,3 +191,201 @@ footer .barraRodape{
     display: inline-block;
     font-size: 33px;
 }
+
+/* Estilos página junte-se a nos*/
+
+.centerPg{
+    align-items: center;
+    height: 400px;
+    margin-left: 680px;
+    margin-right: 488px;
+    margin-top: 50px;
+    padding-top: 20px;
+    width: 550px;
+}
+
+.centerPg h5{
+    display: inline-block;
+}
+
+.form{
+    margin-top: 20px;
+}
+
+.formEmail{
+    margin-top: 20px;
+    padding-left: 175px;
+    padding-bottom: 10px;
+}
+
+
+.formEmail form{
+    padding-bottom: 5px;
+}
+
+.formEmail form input{ 
+    border: none;
+    border-radius: 6px;
+    background-color: rgba(68,213,197,15%);
+    height: 30px;
+    width: 180px;
+} 
+
+.formSenha{
+    border: none;
+    border-radius: 6px;
+    padding-left: 175px;
+    padding-bottom: 10px;
+}
+
+
+.formSenha form{
+    padding-bottom: 5px;
+}
+
+.formSenha form input{ 
+    border: none;
+    border-radius: 6px;
+    background-color: rgba(68,213,197,15%);
+    height: 30px;
+    width: 180px;
+} 
+
+.politicas{
+    padding-top: 18px;
+    padding-left: 150px;
+}
+
+.politicas h5{
+    color: white;
+    padding-left: 5px;
+}
+
+.button-2{
+    border: none;
+    border-radius: 8px;
+    background-image: linear-gradient(to bottom right, #00DEBD, #00BCDA);
+    color: white;
+    font-weight: bold;
+    height: 34px;
+    margin-left: 190px;
+    margin-top: 30px;
+    width: 174px;
+}
+
+/* Página junte-se a nos termina aqui */
+
+/* Definição de senha começa aqui */
+
+section .containerDefinicao{
+    align-items: center;
+    height: 70%;
+    position: relative;
+    width: 100vw;
+}
+
+.centerDefinicao{
+    align-items: center;
+    height: 300px;
+    margin-left: 488px;
+    margin-right: 488px;
+    margin-top: 150px;
+    padding-top: 20px;
+    width: 944px;
+}
+
+.centerDefinicao h1{
+    color: #00DEBD;
+}
+
+.form-1{
+    margin-top: 50px;
+}
+
+.Enviar{
+    color: white;
+    border: none;
+    background-image: linear-gradient(to bottom right, #00DEBD, #00BCDA);
+    border-radius: 8px;
+    font-weight: bold;
+    height: 34px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    margin-top: 30px;
+    margin-left: 385px;
+    width: 174px; 
+}
+
+.form-2{
+    margin-bottom: 20px;
+}
+
+.form-3{
+    margin-bottom: 10px;
+}
+
+.centerDefinicao form input{
+    background-color: rgba(68,213,197,15%);
+    border: none;
+    border-radius: 6px;
+    height: 30px;
+    margin-left: 370px;
+    width: 180px
+}
+
+/* Definição de senha termina aqui */
+
+/*Configuração página de boas vindas começa aqui*/
+
+.boasVindas{
+    margin-top: 110px;
+}
+
+.feito{
+    border: none;
+    background-image: linear-gradient(to bottom right, #00DEBD, #00BCDA);
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    height: 34px;
+    margin-bottom: 25px;
+    margin-left: 190px;
+    margin-top: 30px;
+    width: 125px;
+}
+
+.centerBoasVindas{
+    align-items: center;
+    height: 355px;
+    margin-left: 488px;
+    margin-right: 488px;
+    margin-top: 100px;
+    padding-top: 20px;
+    width: 944px;
+}
+
+.centerBoasVindas h1{
+    color: #00DEBD;
+}
+
+.centerBoasVindas form input{
+    border: none;
+    background-color: rgba(68,213,197,15%);
+    border-radius: 6px;
+    height: 30px;
+    margin-left: 370px;
+    width: 180px
+}
+
+.codigoBoasVindas{
+    margin-bottom: 25px;
+    margin-top: 50px;
+}
+
+.senhaBoasVindas{
+    margin-bottom: 10px;
+}
+
+.feito{
+    margin-left: 410px;
+}
