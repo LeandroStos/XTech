@@ -207,3 +207,90 @@ footer{
     padding-right: 5px;
     margin-top: -4px;
 }
+
+/* estilos página acesso */
+
+.menu-2{
+    background-color: var(--color-dark);
+    display: flex;
+    height: 76px;
+    justify-content: space-around;    
+}
+
+.imagemX img{
+    height: 45px;
+    margin: 15px 25px 2px 2px;
+    width: 45px;
+}
+
+.menuLeft{
+    margin: 30px 25px 2px 2px;
+}
+
+.fraseAcesso{
+    color: var(--color-lighter);
+    font-size: var(--line-height-md);
+    height: 18vh;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 70px;
+    padding: 70px 15px 15px 10px;
+}
+
+.box-container-acesso{
+    display: flex;
+    justify-content: center;
+}
+
+.espaco{
+    height: 5px;
+    width: 15px;
+}
+
+.form-01{
+    background-color: rgba(73, 236, 217, 0.15);
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.form-02{
+    background-color: rgba(73, 236, 217, 0.15);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.box-container-acesso form img{
+    margin-left: 8px;
+}
+
+.senha-01{
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.email-01,.senha-01{
+    background-color: rgba(73, 236, 217, 0.00);
+    border: none;
+    font-size: var(--font-size-md);
+    height: 60px;
+    outline: none;
+    width: 359px;
+}
+
+.button-01{
+    background-color: var(--color-secondary);
+    border: none;
+    border-radius: 25px;
+    color: var(--color-lighter);
+    font-size: var(--font-size-md);
+    height: 60px;
+    transition: 0.4s;
+    width: 209px;
+}
+
+button:hover{
+    background-color: var(--color-primary);
+    color: var(--color-dark);
+}
+
+/*Fim dos estilos página acesso */
