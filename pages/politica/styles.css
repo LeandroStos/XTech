@@ -1,0 +1,99 @@
+/* .cabecalho {
+border: solid black;
+} */
+.container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  /*overflow-y: scroll; /* Verificar o comportamento do Scroll*/
+ }
+
+ h1 {
+  color:aqua;
+  margin-bottom: 40px;
+ }
+
+ h2 {
+   font-weight: normal;
+   margin-bottom: 16px;
+ }
+
+ .content {
+  width: 1400px;
+  height: 680px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 100px;
+ }
+
+ .text{
+ width: auto;
+ min-height: 680px;
+ text-align: left;
+ justify-content: center;
+ /*overflow-y: scroll;  "Comentei apenas para ver o coportamento    */
+  }
+
+ p {
+   margin-bottom: 16px;
+   text-indent: 32px;
+   
+ }
+ /* Tentando incluir o Scroll na pagina sem*/
+ .section {
+   scroll-snap-type: none;
+ }
+ .cabecalho {
+  height: 76px;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  background-color:black;
+  text-align: center;
+   }
+
+  .cabecalho .cabecalho-content {
+    width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+ .menu {
+   text-align:right;
+   margin-right: 30px;
+   margin-bottom: 30px;
+   margin-top: 0;
+
+ }
+
+ footer {
+   background-color: black;
+   height: 76px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ .redes {
+   color: aqua;
+   justify-content: center;
+   text-align: center;
+   background-color: black;
+   font-weight: normal;
+   font-size: 32px;
+   }  
+  
+ .cabecalho .cabecalho-content .menu-items {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: bold;
+  }
+.subtitulo {
+  margin-left: 32px;
+  margin-top: 64px;
+}
+ 
