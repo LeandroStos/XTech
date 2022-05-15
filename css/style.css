@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -36,3 +37,301 @@ a:hover {
 .logo-escuro {
     text-align: right;
 }
+=======
+/* configurações padrão */
+
+:root{
+    /* Padrão: Cores*/
+    --color-lighter: #FFFFFF;
+    --color-light: #f8f9fa;
+    --color-primary: #00DEBD;
+    --color-secondary: #00DEBD;
+    --color-dark: #101527;
+    --color-darker: #000000;
+    /* Padrão: Espaçamentos */
+    --spacing-size-default: 20px;
+    --spacing-size-quarter: calc(.25 * var(--spacing-size-default));
+    --spacing-size-third: calc(.33 * var(--spacing-size-default));
+    --spacing-size-half: calc(.5 * var(--spacing-size-default));
+    --spacing-size-double: calc(2 * var(--spacing-size-default));
+    /* Padrão: Fontes - Tamanhos */
+    --font-size-default: 20px;
+    --font-size-xxs: calc(.7 * var(--font-size-default));
+    --font-size-xs: calc(.8 * var(--font-size-default));
+    --font-size-sm: calc(.9 * var(--font-size-default));
+    --font-size-md: calc(1 * var(--font-size-default));
+    --font-size-lg: calc(1.2 * var(--font-size-default));
+    --font-size-xl: calc(1.6 * var(--font-size-default));
+    --font-size-xxl: calc(1.8 * var(--font-size-default));
+    /* Padrão: Fontes - Tamanhos Entrelinha */
+    --line-height-default: calc(1.5 * var(--font-size-default));
+    --line-height-xxs: calc(1.5 * var(--font-size-xxs));
+    --line-height-xs: calc(1.5 * var(--font-size-xs));
+    --line-height-sm: calc(1.5 * var(--font-size-sm));
+    --line-height-md: calc(1.5 var(--font-size-md));
+    --line-height-lg: calc(1.5 * var(--font-size-lg));
+    --line-height-xl: calc(1.5 * var(--font-size-xl));
+    --line-height-xxl: calc(1.5 * var(--font-size-xxl));
+    /* Padrão: Fontes - Família*/
+    --font-family-title: 'Source Serif Pro', serif;
+    --font-family-text: 'Playfair Display', serif;
+    /* Padrão: Border Radius */
+    --border-radius-default: 30px;
+    --border-radius-circle: 50%;
+}
+
+*{
+    box-sizing: border-box;
+    font-family:'Oswald', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+html,body{
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: 1980px;
+}
+
+/* Contem toda parte de logo menu */
+
+header{
+    height: 145px;
+    position: sticky;
+    width: 100vw;
+}
+
+header .cabecalho{
+    background-color: var(--color-dark);
+    display: flex;
+    height: 76px;
+	padding: 13px 2% 10px 2%;
+}
+
+header .cabecalho img{
+    display: block;
+    height: 50px;
+    margin: 0px auto;
+    width: 60px;
+
+}
+
+header .menu{
+    align-items: center;
+    background-color: var(--color-primary);
+    display:flex;
+    height: 76px;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+ li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 32px;
+
+ }
+
+a:hover{
+    color: var(--color-darker);
+}
+
+a{
+    color: var(--color-lighter);
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+/*Configuração logo menu termina aqui */
+
+/*Inicio configuração página principal(Título da página e barra de pesquisa*/
+main{
+    overflow: hidden;
+}
+
+.center{
+    height: 56.5vh;
+    margin: 190px 5vw 10px 1vw;
+    width: 100vw;
+}
+
+.center h1{
+    color: var(--color-lighter);
+    font-size: 2.3em;
+    height: 25vh;
+    width: 45vw;
+}
+
+.fraseIndex{
+    font-size: var( --font-size-xxl);
+    height: 216px;
+    margin: 0px auto;
+    padding: 4.219409282700422vh 1.352813852813853vw 1.6233766233766234vw 4.219409282700422vh;
+    position: relative;
+    text-align: center;
+    text-align: center;
+    white-space: nowrap;
+	width: 100%;
+    z-index: 1;
+}
+
+.box-container{
+    background-color: rgba(68,213,197,15%);
+    border-radius: var(--border-radius-default);
+    left: 33%;
+    min-width: 350px;
+    position: absolute;
+    padding: 1vh;
+    top: 58%;
+    width: 37vw;
+}
+
+.box-container img{
+    padding: 3px 0px 2px 2px;
+}
+
+.search{
+    border: none;
+    background: none;
+    color: var(--color-darker);
+    font-size: var(--font-size-md);
+    line-height: 30px;
+    outline: none;
+    padding-left: 14px;
+    position: fixed;
+    transform: 0.4s;
+    width: 65vh;
+}
+
+.search-02{
+    align-items: left;
+    background-color: rgba(73, 236, 217, 0.15);
+    border-radius: 50%;
+    border: none;
+    color: var(--color-lighter);
+    display: flex;
+    float: left;
+    height: 30px;
+    justify-content: center;
+    width: 30px;
+}
+
+/*Termina aqui configuração página principal(Título da página e barra de pesquisa*/
+
+/*Inicio página rodapé*/
+footer{
+    background-color: #101527;
+    bottom: 0;
+    height: 8vh;
+    position: fixed;
+    text-align: center;
+    width: 100vw;
+}
+
+.barraRodape{
+    display: flex;
+    justify-content: center;
+    padding: 3vh 3vh 3vw 0;
+}
+
+.fa-brands fa-facebook-square{
+    height: 35px;
+    width: 35px;
+}
+
+.img-1,.img-2,.img-3{
+    color: var(--color-secondary);
+    font-size: 33px;
+    padding-right: 5px;
+    margin-top: -4px;
+}
+
+/* estilos página acesso */
+
+.menu-2{
+    background-color: var(--color-dark);
+    display: flex;
+    height: 76px;
+    justify-content: space-around;    
+}
+
+.imagemX img{
+    height: 45px;
+    margin: 15px 25px 2px 2px;
+    width: 45px;
+}
+
+.menuLeft{
+    margin: 30px 25px 2px 2px;
+}
+
+.fraseAcesso{
+    color: var(--color-lighter);
+    font-size: var(--line-height-md);
+    height: 18vh;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 70px;
+    padding: 70px 15px 15px 10px;
+}
+
+.box-container-acesso{
+    display: flex;
+    justify-content: center;
+}
+
+.espaco{
+    height: 5px;
+    width: 15px;
+}
+
+.form-01{
+    background-color: rgba(73, 236, 217, 0.15);
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.form-02{
+    background-color: rgba(73, 236, 217, 0.15);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.box-container-acesso form img{
+    margin-left: 8px;
+}
+
+.senha-01{
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.email-01,.senha-01{
+    background-color: rgba(73, 236, 217, 0.00);
+    border: none;
+    font-size: var(--font-size-md);
+    height: 60px;
+    outline: none;
+    width: 359px;
+}
+
+.button-01{
+    background-color: var(--color-secondary);
+    border: none;
+    border-radius: 25px;
+    color: var(--color-lighter);
+    font-size: var(--font-size-md);
+    height: 60px;
+    transition: 0.4s;
+    width: 209px;
+}
+
+button:hover{
+    background-color: var(--color-primary);
+    color: var(--color-dark);
+}
+
+/*Fim dos estilos página acesso */
+>>>>>>> 8ce2d4864a72e8a39067d54645d78452ca41303f
