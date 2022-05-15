@@ -49,7 +49,7 @@
 
 /*Body com imagem*/
 body {
-    background:  linear-gradient(104.94deg, rgba(16, 21, 39, 0.85) 42.49%, rgba(16, 21, 39, 0.42) 96.36%), url(../images/fundo.jpg);
+    background: linear-gradient(104.94deg, rgba(16, 21, 39, 0.85) 42.49%, rgba(16, 21, 39, 0.42) 96.36%), url(../images/fundo.jpg);
     backdrop-filter: blur(10px);
     background-repeat: no-repeat;
     background-size: cover;
@@ -72,6 +72,29 @@ header {
     align-items: center;
 }
 
+.menu-2 {
+    background-color: var(--color-dark);
+    display: flex;
+    height: 76px;
+    justify-content: space-around;
+}
+
+.menu-2 img {
+    display: flex;
+    padding: 13px 2% 10px 2%;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+}
+
+.menuEsquerdaAcesso {
+    margin: 30px 25px 2px 2px;
+}
+
+.menuEsquerdaAcesso a:hover {
+    color: var(--color-primary);
+}
+
 header .cabecalho {
     background-color: var(--color-dark);
     display: flex;
@@ -90,7 +113,8 @@ header .cabecalho img {
 
 header .menu {
     align-items: center;
-    background: linear-gradient(269.83deg, var(--color-primary) 8.79%, var(--color-secondary) 65.48%);    display: flex;
+    background: linear-gradient(269.83deg, var(--color-primary) 8.79%, var(--color-secondary) 65.48%);
+    display: flex;
     height: 3vw;
     justify-content: space-around;
     width: 100vw;
@@ -113,6 +137,7 @@ a {
     text-decoration: none;
     transition: 0.4s;
 }
+
 /*INICIO AJUSTES MENU FIM Ajustes Padrões*/
 
 /*Config MAIN INDEX*/
@@ -144,12 +169,13 @@ main {
 .center b {
     color: var(--color-primary);
 }
-    
+
 .box-container {
     background-color: rgba(68, 213, 197, 15%);
     border-radius: var(--border-radius-default);
-align-items: center;
-justify-content: center;    position: absolute;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
     padding: 1vh;
     width: 40vw;
 }
@@ -172,8 +198,6 @@ justify-content: center;    position: absolute;
     position: fixed;
     width: 60vh;
 }
-
-
 
 /*Termina aqui configuração página principal(Título da página e barra de pesquisa*/
 
@@ -200,35 +224,7 @@ footer {
     margin-top: -4px;
 }
 
-/* estilos página acesso */
-
-.menu-2 {
-    background-color: var(--color-dark);
-    display: flex;
-    height: 76px;
-    justify-content: space-around;
-}
-
-.imagemX img {
-    height: 45px;
-    margin: 15px 25px 2px 2px;
-    width: 45px;
-}
-
-.menuLeft {
-    margin: 30px 25px 2px 2px;
-}
-
-.fraseAcesso {
-    color: var(--color-lighter);
-    font-size: var(--line-height-md);
-    height: 18vh;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 70px;
-    padding: 70px 15px 15px 10px;
-}
-
+/* estilos página Acesso */
 .box-container-acesso {
     display: flex;
     justify-content: center;
@@ -239,35 +235,21 @@ footer {
     width: 15px;
 }
 
-.form-01 {
+.input_01 {
     background-color: rgba(73, 236, 217, 0.15);
     border-bottom-left-radius: 25px;
     border-top-left-radius: 25px;
 }
 
-.form-02 {
-    background-color: rgba(73, 236, 217, 0.15);
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-}
-
-.box-container-acesso form img {
-    margin-left: 8px;
-}
-
-.senha-01 {
-    border-bottom-right-radius: 25px;
-    border-top-right-radius: 25px;
-}
-
 .email-01,
 .senha-01 {
     background-color: rgba(73, 236, 217, 0.00);
+    color: var(--color-light);
     border: none;
     font-size: var(--font-size-md);
-    height: 60px;
+    height: 25px;
     outline: none;
-    width: 359px;
+    width: 300px;
 }
 
 .button-01 {
@@ -287,3 +269,53 @@ button:hover {
 }
 
 /*Fim dos estilos página acesso */
+
+/*Páginas Públicas*/
+.containerPolitica {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /*overflow-y: scroll; /* Verificar o comportamento do Scroll*/
+}
+
+.containerSobre {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    /*overflow-y: scroll; /* Verificar o comportamento do Scroll*/
+}
+
+
+.content {
+    width: 1400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text {
+    width: auto;
+    text-align: left;
+    justify-content: center;
+    /*overflow-y: scroll;  "Comentei apenas para ver o coportamento    */
+}
+
+.text p {
+    margin-bottom: 16px;
+    text-indent: 32px;
+    color: var(--color-light);
+}
+
+.content h1 {
+    color: var(--color-primary);
+    margin-bottom: 40px;
+   }
+  
+.text h2 {
+     font-weight: normal;
+     margin-bottom: 16px;
+     color: var(--color-primary);
+   }
+
