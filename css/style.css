@@ -238,6 +238,7 @@ footer {
 .box-container-acesso {
     display: flex;
     justify-content: center;
+    
 }
 
 .espaco {
@@ -249,7 +250,10 @@ footer {
     background-color: rgba(73, 236, 217, 0.15);
     border-bottom-left-radius: 25px;
     border-top-left-radius: 25px;
-}
+     }
+.input_01.img-1,.img-2 {
+    margin-left: 20px;
+}     
 
 .email-01,
 .senha-01 {
