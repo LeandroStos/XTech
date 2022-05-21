@@ -424,3 +424,56 @@ button:hover {
     margin-left: 30px;
     
   }
+
+  /*Customização da tela de Cadastro de Candidados   */
+  .input_01 /*   */
+  {
+    /* margin-top: 48px;
+    background: none; */
+    /* height: 300px;
+    width: 300px; */
+    background: none;
+    outline: none;
+    font-size:40px;
+    border:none;
+    border-radius: 26px;
+    color:white;
+    margin-left: 16px;
+  
+  }
+  .input_02,
+  .input_03,
+  .input_04 
+   {
+    display: flex;
+    margin-top: 30px;
+    background: none;
+    align-items: center;
+    
+       
+  }
+
+ .input_05,
+ .input_06 
+ {
+    margin-top: 30px;
+    background: none
+ }
+ .center_Candidatos h1 {
+    display: flex; 
+    margin-top: 30px;
+     color: aqua;
+     margin-left: 60px; 
+     justify-content: center;    
+ }
+ .campo {
+     color: #f8f9fa;
+     text-decoration-color: #f8f9fa;
+     font-family: var(--color-lighter);
+     display: flex;
+     margin-top: 30px;
+     /* justify-content: space-between; */
+     
+     
+ }
+
