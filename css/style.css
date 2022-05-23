@@ -56,6 +56,8 @@ body {
     font-family: 'Inter', sans-serif;
     color: var(--color-dark);
 }
+
+
 .logo_cinza {
  display: flex;
  justify-content: right;
@@ -222,7 +224,9 @@ footer {
 .barraRodape {
     display: flex;
     justify-content: center;
-    padding: 3vh 3vh 3vw 0;
+    padding: 16px 24px 16px 24px;
+    align-items: center;
+    
 }
 
 .img-1,
@@ -230,8 +234,9 @@ footer {
 .img-3 {
     color: var(--color-primary);
     font-size: 33px;
-    padding-right: 5px;
-    margin-top: -4px;
+    padding: 8px;
+
+    
 }
 
 /* estilos página Acesso */
@@ -251,15 +256,13 @@ footer {
     border-bottom-left-radius: 25px;
     border-top-left-radius: 25px;
      }
-.input_01.img-1,.img-2 {
-    margin-left: 20px;
-}     
+   
 
 .email-01,
 .senha-01 {
     background-color: rgba(73, 236, 217, 0.00);
-    color: var(--color-light);
-    border: none;
+    color: var(--color-light); 
+    border: none; 
     font-size: var(--font-size-md);
     height: 25px;
     outline: none;
@@ -347,15 +350,17 @@ button:hover {
    }
 
    .search-box {
-    width: 1509.42px;
-    height: 61.66px;
-    top: 238.9px;
-    left: 200.34px;
+    width: 1400.42px;
+    height: 50.66px;
+    top: 20.9px;
+    left: 100.34px;
     border-radius: 26px;
     background: #44D5C526;
     display: flex;
     justify-content: space-between;
-    
+    /* font-size: medium; */
+    /* border-left: 90px;
+    border-right: 90px; */
   }
   .section {
     width: 60px;
@@ -403,7 +408,11 @@ button:hover {
   }
   .link-inscricao {
     margin-top: 16px;
-   
+    color: var(--color-primary);
+  
+ }
+ .link-inscricao a:hover {
+   color: var(--color-primary);
   }
   .vagas-encontradas {
    color: aqua;
@@ -449,8 +458,7 @@ button:hover {
     margin-top: 30px;
     background: none;
     align-items: center;
-    
-       
+           
   }
 
  .input_05,
@@ -473,7 +481,113 @@ button:hover {
      display: flex;
      margin-top: 30px;
      /* justify-content: space-between; */
-     
-     
+  
  }
 
+
+/* Personalizações Formularios de Cadastro  */
+.box_formulario {
+    border-radius: 15px;
+    padding: 15px;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+
+  }
+  legend {
+    justify-content: center;
+    align-items: center;
+   }
+ 
+   .inputUser_T {
+     background: none;
+     border: none;
+     border-bottom: 1px solid white;
+     outline: none;
+     color: white;
+     font-size: 15px;
+     width: 100%;
+     letter-spacing: 2px;
+     
+   }
+   .label_input{
+     top: 0px;
+     left:0px;
+     pointer-events: none;
+     transition: .5px;
+     color: aliceblue;
+   } 
+   .inputBox{
+     position: relative;
+     margin-left: 30px;
+   }
+   
+   .inputUser_T:focus~ .label_input,input:valid~ .label_input
+   {
+     top: -5px;
+     font-size: 8px;
+     color: aqua;
+     margin-left: 68px;
+ } 
+ .inputUser{
+  color: white;
+ }
+ .radio{
+ color: white;
+ /* margin-left: 30px; */
+
+ /* justify-content: space-between;
+ display: flex;
+ */
+ }
+ .sexo {
+ color: white;
+ margin-left: 30px;
+ }
+ .date,
+ .textcep,
+ .textcnpj,
+ .inputcpf{
+  color:white;
+  background:none;
+ }
+ .inputDate,
+  {
+     color: #101527;
+     background-color: none;
+     font-size: medium;
+ }
+ .inputcep{
+     color: #101527;
+ }
+
+ .submit{
+    color:#101527;
+    width: 200px;
+    height: 50px;     
+    background:aqua;
+    border-radius: 15px;
+    cursor: pointer;
+        
+ }
+.btn-center{
+    display: flex;
+    justify-content: center;
+
+}
+
+ .logo_cinza{
+  justify-content: right;       
+ }
+ 
+ #data_nascimento {
+    border: none;
+    padding: 8px;
+    border-radius: 10px ;
+    outline: none;
+ }
+ #feminino,
+ #masculino,#outros {
+ margin-left: 30px;
+ }

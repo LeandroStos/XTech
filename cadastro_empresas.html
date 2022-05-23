@@ -14,87 +14,7 @@
         <link rel="icon" type="image/png" sizes="50x50" href="images/favicon.png">
         <title>XTech | O seu primeiro passo na programação!</title>
 </head>
-<style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-image: linear-gradient(to right, #101527,black);
-        
-          }
-        
-          .box_formulario {
-            border-radius: 15px;
-            padding: 15px;
-          }
-          legend {
-           justify-content: center;
-           align-items: center;
-          }
-        
-          .inputUser_T {
-            background: none;
-            border: none;
-            border-bottom: 1px solid white;
-            outline: none;
-            color: white;
-            font-size: 15px;
-            width: 100%;
-            letter-spacing: 2px;
-            
-          }
-          .label_input{
-            top: 0px;
-            left:0px;
-            pointer-events: none;
-            transition: .5px;
-            color: aliceblue;
-          } 
-          .inputBox{
-            position: relative;
-            margin-left: 30px;
-          }
-          
-          .inputUser_T:focus~ .label_input,input:valid~ .label_input
-          {
-            top: -5px;
-            font-size: 8px;
-            color: aqua;
-            margin-left: 68px;
-        } 
-        .inputUser{
-         color: white;
-        }
-        .radio{
-        color: white;
-       
-        /* justify-content: space-between;
-        display: flex;
-        */
-        }
-        .sexo {
-        color: white;
-        margin-left: 30px;
-        }
-        date{
-         color:white;
-         background:#101527;
-         text-decoration-color: white;
-         
-        }
-        .submit{
-           color:aqua;
-           width: 200px;
-           height: 50px;     
-           background:aqua;
-           border-radius: 15px;
-           
-        }
-        .logo_cinza{
-         justify-content: right;       
-        }
-        
-        
-        </style>
-        
+
 
 <body>
 
@@ -129,9 +49,16 @@
 
                                         </div>
                                         <br></br>
+                                        <div class="inputBox">
+                                          <label for="CNPJ"class="textcnpj"><b>CNPJ:</b></label>
+                                          <input type="number" name="CNPJ" id="CNPJ"
+                                                  class="inputUser" required>
+
+                                  </div>
+                                  <br></br>
 
                                         <div class="inputBox">
-                                                <label for="email" class="label_input">Segmento</label>
+                                                <label for="email" class="label_input">Email</label>
                                                 <input type="text" name="email" id="email" class="inputUser_T" required>
 
 
@@ -139,13 +66,15 @@
                                         <br></br>
 
                                         <div class="inputBox">
-                                                <label for="telefone" class="label_input">Site</label>
+                                                <label for="telefone" class="label_input">Telefone</label>
                                                 <input type="tel" name="telefone" id="telefone" class="inputUser_T"
                                                         required>
 
 
                                         </div>
                                         <br></br>
+                                        <!-- <br></br>
+
                                         <p class="sexo"><b>Sexo:</b></p>
                                         <input type="radio"  id="feminino" name="genero" value="feminino" required>
                                         <label for="feminino"class="radio">Feminino</label>
@@ -154,26 +83,21 @@
                                         <input type="radio" id="outros" name="genero" value="outros" required>
                                         <label for="outros"class="radio">Outros</label>
 
-                                        <br></br>
+                                        <br></br> -->
 
-                                        <div class="inputBox">
-                                                <label for="data_nascimento" class="date"><b>Data de Fundação:</b></label>
-                                                <input type="date" name="data_nascimento" id="data_nascimento"
-                                                        class="inputUser" required>
 
-                                        </div>
-                                        <br></br>
                                         <div class="inputBox">
                                                 <label for="endereco" class="label_input">Endereço</label>
                                                 <input type="text" name="endereco" id="endereco" class="inputUser_T"  required>
 
                                                 <br></br>
                                                 <div class="inputBox">
-                                                        <label for="cep"class="cep"><b>CEP:</b></label>
-                                                        <input type="cep" name="CEP" id="cep"
-                                                                class="inputUser" required>
+                                                  <div class="inputBox">
+                                                    <label for="cep"class="textcep"><b>CEP:</b></label>
+                                                    <input type="number" name="CEP" id="cep"
+                                                            class="inputcep" required>
 
-                                                </div>
+                                            </div>
 
                                         </div>
                                         <br></br>
@@ -206,6 +130,14 @@
         <div class="logo_cinza">
                 <img src="./../images/XTECH.png" title="Xtech" />
         </div>
+        <footer>
+                <div class="barraRodape">
+                    <div class="img-1"><i class="fa-brands fa-facebook-square"></i></div>
+                    <div class="img-2"><i class="fa-brands fa-linkedin"></i></div>
+                    <div class="img-3"><i class="fa-brands fa-instagram-square"></i></div>
+                </div>
+                <!--barraRodape-->
+            </footer>
 
 </body>
 
