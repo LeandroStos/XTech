@@ -304,9 +304,13 @@ button:hover {
     justify-content: center;
     /*overflow-y: scroll; /* Verificar o comportamento do Scroll*/
 }
-/* .text_sobre {
+.esqueceu {
+display: flex;
+margin-left: 200px;
+font-size: 16px;
+margin-top: 8px;
 
-} */
+}
 
 .containerVagas {
     width: 100%;
@@ -533,12 +537,8 @@ button:hover {
 /*TESTE*/
 .inputBox:focus~ .label_input,
 .inputUser_T:valid{
-    top: -20px;
+  transition: top -20px;
 }
-
-
-
-/*TESTE*/
 
 
 
@@ -568,11 +568,12 @@ button:hover {
   color:white;
   background:none;
  }
- .inputDate,
+ .inputDate
   {
      color: #101527;
      background-color: none;
      font-size: medium;
+
      
  }
  .inputcep,
@@ -610,7 +611,9 @@ button:hover {
     outline: none;
     background: none;
     border-color: white;
-    color:white
+    color:white;
+    
+    
  }
  #feminino,
  #masculino,#outros {
