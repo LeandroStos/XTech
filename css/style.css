@@ -435,12 +435,8 @@ button:hover {
   }
 
   /*Customização da tela de Cadastro de Candidados   */
-  .input_01 /*   */
-  {
-    /* margin-top: 48px;
-    background: none; */
-    /* height: 300px;
-    width: 300px; */
+   /*  .input_01 */
+  /* {
     background: none;
     outline: none;
     font-size:40px;
@@ -449,7 +445,7 @@ button:hover {
     color:white;
     margin-left: 16px;
   
-  }
+  } */
   .input_02,
   .input_03,
   .input_04 
@@ -484,17 +480,18 @@ button:hover {
   
  }
 
-
 /* Personalizações Formularios de Cadastro  */
+
 .box_formulario {
     border-radius: 15px;
     padding: 15px;
-    /* position: absolute;
-    top: 50%;
+    /* position: absolute; */
+    /* top: 50%;
     left: 50%;
     transform: translate(-50%,-50%); */
 
   }
+  
   legend {
     justify-content: center;
     align-items: center;
@@ -506,33 +503,52 @@ button:hover {
      border-bottom: 1px solid white;
      outline: none;
      color: white;
-     font-size: 15px;
+     font-size: 16px;
      width: 100%;
      letter-spacing: 2px;
      
    }
+
+   .inputUser{
+    color: white;
+    
+   }
+
    .label_input{
+    /* position: absolute;    =>  Distancia ou aproxima a label da linha de input */
      top: 0px;
      left:0px;
      pointer-events: none;
      transition: .5px;
-     color: aliceblue;
+     color:white         
    } 
+   .inputUser_T:focus ~ .label_input,
+   .inputUser_T:valid{
+     /* top: -20px; */
+     /* font-size: 8px; */
+     color:white;
+     /* margin-left: 68px; */
+     left: 0.8rem;
+ }  
+/*TESTE*/
+.inputBox:focus~ .label_input,
+.inputUser_T:valid{
+    top: -20px;
+}
+
+
+
+/*TESTE*/
+
+
+
    .inputBox{
      position: relative;
      margin-left: 30px;
+     margin-left: 30px;
    }
    
-   .inputUser_T:focus~ .label_input,input:valid~ .label_input
-   {
-     top: -5px;
-     font-size: 8px;
-     color: aqua;
-     margin-left: 68px;
- } 
- .inputUser{
-  color: white;
- }
+
  .radio{
  color: white;
  /* margin-left: 30px; */
@@ -557,9 +573,15 @@ button:hover {
      color: #101527;
      background-color: none;
      font-size: medium;
+     
  }
- .inputcep{
-     color: #101527;
+ .inputcep,
+ .inputDoc{
+     color: white;
+     margin-left: 5px;
+     padding: 4px;
+     background: none;
+     border-color: white;
  }
 
  .submit{
@@ -582,10 +604,13 @@ button:hover {
  }
  
  #data_nascimento {
-    border: none;
+    /* border: none; */
     padding: 8px;
     border-radius: 10px ;
     outline: none;
+    background: none;
+    border-color: white;
+    color:white
  }
  #feminino,
  #masculino,#outros {
