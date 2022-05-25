@@ -619,3 +619,127 @@ margin-top: 8px;
  #masculino,#outros {
  margin-left: 30px;
  }
+/*Inicio configuração página cadastro de*/
+
+.center-02{
+    height: 63.5vh;
+    margin: 90px 5vw 10px 1vw;
+    width: 100vw;
+}
+
+.fraseCadastro{
+    color: var(--color-lighter);
+    height: 80px;
+    margin: 10px auto;
+    padding: 20px 5px 5px 3px;
+    text-align: center;
+    width: 80vw;
+    
+}
+
+.formEmail{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    margin: 2px auto;
+    width: 80vw;
+}
+
+.email{
+    background-color: rgba(73, 236, 217, 0.15);
+    border: none;
+    border-radius: 25px;
+    height: 60px; 
+    width: 430px;
+}
+
+.inputEmail{
+    background-color: rgba(73, 236, 217, 0.00);
+    border: none;
+    border-radius: 25px;
+    float: right;
+    font-size: var(--font-size-md);
+    height: 60px;
+    outline: none;
+    width: 390px;
+}
+
+.email img{
+    margin-top: 12px;
+    margin-left: 8px;
+}
+
+.formSenha{
+    align-items: center;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    height: 150px;    
+    margin: 2px auto;
+    width: 80vw;
+}
+
+.senha{
+    background-color: rgba(73, 236, 217, 0.15);
+    border: none;
+    border-radius: 25px;
+    height: 60px;
+    width: 430px;
+}
+
+.inputSenha{
+    background-color: rgba(73, 236, 217, 0.00);
+    border-radius: 25px;
+    border: none;
+    float: right;
+    font-size: var(--font-size-md);
+    height: 60px;
+    outline: none;
+    width: 390px;
+}
+
+.senha img{
+    margin-top: 12px;
+    margin-left: 8px;
+}
+
+.politicas{
+    display: flex;
+    flex-wrap: wrap;
+    height: 35px;
+    margin-left: 40vw;
+}
+
+.politicas h5{
+    color: var(--color-lighter);
+    padding-left: 8px;
+}
+
+.button-container{
+    margin: 0 auto;
+    height: 70px;
+    width: 400px;
+}
+
+.button-2{
+    background-color: var(--color-secondary);
+    border-radius: 25px;
+    border: none;
+    color: var(--color-lighter);
+    font-size: var(--font-size-lg);
+    height: 54px;
+    margin: 2px 2px 2px 20px;
+    width: 354px;
+}
+
+.espaco-2{
+    height: 40px;
+}
+
+.espaco-3{
+    height: 30px;
+    width: 41vw;
+}
+
+/*Final configuração página cadastro*/
