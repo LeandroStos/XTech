@@ -365,6 +365,7 @@ margin-top: 8px;
     background: #44D5C526;
     display: flex;
     justify-content: space-between;
+    
     /* font-size: medium; */
     /* border-left: 90px;
     border-right: 90px; */
@@ -383,7 +384,7 @@ margin-top: 8px;
   
    background: none;
    outline: none;
-   font-size:40px;
+   font-size:20px;
    border:none;
    border-radius: 26px;
    color:white;
