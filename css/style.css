@@ -622,12 +622,14 @@ margin-top: 8px;
  #masculino,#outros {
  margin-left: 30px;
  }
-/*Inicio configuração página cadastro de*/
+
+/*Inicio configuração página cadastro de Senha*/
 
 .center-02{
     height: 63.5vh;
     margin: 90px 5vw 10px 1vw;
     width: 100vw;
+    /* margin-top: 30px; */
 }
 
 .fraseCadastro{
