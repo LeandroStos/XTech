@@ -101,7 +101,7 @@ header {
     margin: 30px 25px 2px 2px;
 }
 
-.menuEsquerdaAcesso a:hover {
+.menuEsquerdaAcesso a:hover{
     color: var(--color-primary);
 }
 
@@ -310,6 +310,9 @@ margin-left: 200px;
 font-size: 16px;
 margin-top: 8px;
 
+}
+.esqueceu a:hover{
+    color: var(--color-primary);
 }
 
 .containerVagas {
@@ -634,6 +637,7 @@ margin-top: 8px;
     padding: 20px 5px 5px 3px;
     text-align: center;
     width: 80vw;
+    margin-top: 30px;
     
 }
 
@@ -652,6 +656,7 @@ margin-top: 8px;
     border-radius: 25px;
     height: 60px; 
     width: 430px;
+    
 }
 
 .inputEmail{
@@ -663,6 +668,7 @@ margin-top: 8px;
     height: 60px;
     outline: none;
     width: 390px;
+    color: white;
 }
 
 .email img{
@@ -686,6 +692,7 @@ margin-top: 8px;
     border-radius: 25px;
     height: 60px;
     width: 430px;
+    color: white;
 }
 
 .inputSenha{
@@ -697,6 +704,7 @@ margin-top: 8px;
     height: 60px;
     outline: none;
     width: 390px;
+    color: white;
 }
 
 .senha img{
