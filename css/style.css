@@ -771,7 +771,7 @@ margin-top: 15px;
     display: flex;
     flex-wrap: wrap;
     height: 35px;
-    margin-left: 40vw;
+    margin: auto;
 }
 
 .politicas h5{
@@ -810,3 +810,8 @@ margin-left: 60px;
 } */
 
 /*Final configuração página Senhacadastro*/
+
+form input{
+display: block;
+margin: 12px auto;
+}
