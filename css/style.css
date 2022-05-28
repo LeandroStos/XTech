@@ -314,10 +314,14 @@ display: flex;
 margin-left: 200px;
 font-size: 16px;
 margin-top: 8px;
-
+}
+.esqueceu {
+margin-left: 0;
+margin-top: 15px;
 }
 .esqueceu a:hover{
     color: var(--color-primary);
+    
 }
 
 .containerVagas {
@@ -669,33 +673,35 @@ margin-top: 8px;
  margin-left: 30px;
  }
 
-/*Inicio configuração página cadastro de Senha*/
+/*Inicio configuração página Senhacadastro*/
 
 .center-02{
     height: 63.5vh;
     margin: 90px 5vw 10px 1vw;
     width: 100vw;
+ 
     /* margin-top: 30px; */
 }
 
 .fraseCadastro{
     color: var(--color-lighter);
-    height: 80px;
+    /* height: 80px;
     margin: 10px auto;
     padding: 20px 5px 5px 3px;
     text-align: center;
     width: 80vw;
-    margin-top: 30px;
+    margin-top: 30px; */
     
 }
 
 .formEmail{
-    align-items: center;
+    /* align-items: center; */
     display: flex;
     flex-direction: column;
     height: 150px;
     margin: 2px auto;
     width: 80vw;
+    margin-top: 30px;
 }
 
 .email{
@@ -717,6 +723,7 @@ margin-top: 8px;
     outline: none;
     width: 390px;
     color: white;
+    
 }
 
 .email img{
@@ -725,7 +732,7 @@ margin-top: 8px;
 }
 
 .formSenha{
-    align-items: center;
+    /* align-items: center; */
     border: none;
     display: flex;
     flex-direction: column;
@@ -770,12 +777,16 @@ margin-top: 8px;
 .politicas h5{
     color: var(--color-lighter);
     padding-left: 8px;
+  
 }
-
+/* .check h5{
+margin-left: 60px;
+} */
 .button-container{
-    margin: 0 auto;
+    margin: 80px;
     height: 70px;
     width: 400px;
+    
 }
 
 .button-2{
@@ -793,9 +804,9 @@ margin-top: 8px;
     height: 40px;
 }
 
-.espaco-3{
+/* .espaco-3{
     height: 30px;
     width: 41vw;
-}
+} */
 
-/*Final configuração página cadastro*/
+/*Final configuração página Senhacadastro*/
