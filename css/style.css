@@ -356,19 +356,35 @@ margin-top: 8px;
      color: var(--color-primary);
    }
 
+   /*=================== Tela de Consulta Vagas ============ */
+
    .search-box {
-    width: 1400.42px;
+    width: 500.42px;
     height: 50.66px;
+    margin-left: 30px;
     top: 20.9px;
     left: 100.34px;
     border-radius: 26px;
     background: #44D5C526;
     display: flex;
-    justify-content: space-between;
+    /* justify-content:left; */
+    text-align: center;
+    align-items: center;
     
     /* font-size: medium; */
     /* border-left: 90px;
     border-right: 90px; */
+  }
+  .search-button{
+    
+    color: #00DEBD;
+    margin-left: 38px;
+    position: relative;
+    margin-right: 30px;
+    justify-content: right;
+    text-align: center;
+  
+
   }
   .section {
     width: 60px;
@@ -380,8 +396,17 @@ margin-top: 8px;
     align-items: center;
   
   }
+  .pesquisa_vaga{
+    font-size: medium;
+    color: #00DEBD;
+    background: none;
+    outline: none;
+    font-size:20px;
+    border: none;
+
+    
+  }
   .search-text {
-  
    background: none;
    outline: none;
    font-size:20px;
@@ -402,21 +427,28 @@ margin-top: 8px;
   .Empresa {
   margin-top: 48px;
   background: #8b919026;
+  margin-left: 30px;
+  border-radius: 25px;
+  width: 500.42px;
+  height: 30.66px;
   
   }
   
-  .Localidade {
-    margin-top: 30px;
+  .Localidade,
+  .Teste{
+    margin-top: 15px;  
     background: #8b919026;
-  
+    margin-left: 30px;
+    border-radius: 25px;
+    width: 500.42px;
+    height: 30.66px;
   }
-  .Teste {
-    margin-top: 30px;
-    background: #8b919026;
-  }
+
+
   .link-inscricao {
-    margin-top: 16px;
+    margin-top: 15px;
     color: var(--color-primary);
+    margin-left: 50px;
   
  }
  .link-inscricao a:hover {
@@ -426,7 +458,7 @@ margin-top: 8px;
    color: aqua;
    margin-left: 30px;
    border-radius: 40px;
-   background: none;
+   background:none;
    outline: none;
    width: 300px;
    align-items: center;
