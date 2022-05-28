@@ -333,6 +333,9 @@ margin-top: 8px;
     flex-direction: column;
    
 }
+.content p {
+    text-align: justify;
+}
 
 .text {
     width: auto;
