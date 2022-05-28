@@ -155,7 +155,10 @@ main {
     overflow: hidden;
     justify-content: center;
     align-items: center;
-}
+    min-width: 320px;
+    max-width: 800px;
+    margin:auto;
+   }
 
 .center {
     /* display: flex;
@@ -328,6 +331,7 @@ margin-top: 8px;
     display: flex;
     justify-content: center;
     flex-direction: column;
+   
 }
 
 .text {
