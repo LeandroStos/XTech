@@ -185,19 +185,17 @@ main {
 .box-container {
     background-color: rgba(68, 213, 197, 15%);
     border-radius: var(--border-radius-default);
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    padding: 1vh;
+    margin-left: 30vw;
+    padding: 2vh;
     width: 40vw;
 }
 
 .icone {
     color: var(--color-light);
     font-size: 25px;
+    display: inline-block;
     padding-right: 5px;
 }
-
 
 .search {
     border: none;
