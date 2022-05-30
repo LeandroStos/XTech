@@ -240,21 +240,23 @@ footer {
 /* estilos página Acesso */
 .box-container-acesso {
     display: flex;
-    justify-content: center;
-    
+    flex-direction: column;
+    align-items: center;
 }
 
-.espaco {
-    height: 5px;
-    width: 15px;
-}
-
-.input_01 {
+.box1 {
     background-color: rgba(73, 236, 217, 0.15);
     border-bottom-left-radius: 25px;
     border-top-left-radius: 25px;
-     }
-   
+    display: inline-block;
+    margin: 5px;
+    height: 60px;
+}
+
+.box1 img{
+    margin-left: 15px;
+    margin-right: 20px;
+}
 
 .email-01,
 .senha-01 {
