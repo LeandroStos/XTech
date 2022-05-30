@@ -189,19 +189,17 @@ main {
 .box-container {
     background-color: rgba(68, 213, 197, 15%);
     border-radius: var(--border-radius-default);
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    padding: 1vh;
+    margin-left: 30vw;
+    padding: 2vh;
     width: 40vw;
 }
 
 .icone {
     color: var(--color-light);
     font-size: 25px;
+    display: inline-block;
     padding-right: 5px;
 }
-
 
 .search {
     border: none;
@@ -246,21 +244,23 @@ footer {
 /* estilos página Acesso */
 .box-container-acesso {
     display: flex;
-    justify-content: center;
-    
+    flex-direction: column;
+    align-items: center;
 }
 
-.espaco {
-    height: 5px;
-    width: 15px;
-}
-
-.input_01 {
+.box1 {
     background-color: rgba(73, 236, 217, 0.15);
     border-bottom-left-radius: 25px;
     border-top-left-radius: 25px;
-     }
-   
+    display: inline-block;
+    margin: 5px;
+    height: 60px;
+}
+
+.box1 img{
+    margin-left: 15px;
+    margin-right: 20px;
+}
 
 .email-01,
 .senha-01 {
