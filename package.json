@@ -1,0 +1,26 @@
+{
+  "name": "projeto-xtech",
+  "version": "1.0.0",
+  "description": "<p align=\"center\" >",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/egidioserri/XTech.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/egidioserri/XTech/issues"
+  },
+  "homepage": "https://github.com/egidioserri/XTech#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
