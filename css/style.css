@@ -150,14 +150,11 @@ a {
 
 /*INICIO AJUSTES MENU FIM Ajustes Padrões*/
 
-                                     /*Config MAIN INDEX RESPONSIVIDADE */
+/*Config MAIN INDEX*/
 main {
     overflow: hidden;
     justify-content: center;
     align-items: center;
-    min-width: 320px;
-    max-width: 800px;
-    margin:auto
 }
 
 .center {
@@ -168,7 +165,6 @@ main {
     padding: 15vh 0 0 0;
     justify-content: center;
     align-items: center;
-    
   
 }
 
@@ -244,21 +240,23 @@ footer {
 /* estilos página Acesso */
 .box-container-acesso {
     display: flex;
-    justify-content: center;
-    
+    flex-direction: column;
+    align-items: center;
 }
 
-.espaco {
-    height: 5px;
-    width: 15px;
-}
-
-.input_01 {
+.box1 {
     background-color: rgba(73, 236, 217, 0.15);
     border-bottom-left-radius: 25px;
     border-top-left-radius: 25px;
-     }
-   
+    display: inline-block;
+    margin: 5px;
+    height: 60px;
+}
+
+.box1 img{
+    margin-left: 15px;
+    margin-right: 20px;
+}
 
 .email-01,
 .senha-01 {
@@ -292,12 +290,11 @@ button:hover {
 
 /*Páginas Públicas*/
 .containerPolitica {
-    /* width: 100%;
-    height: 100vh; */
+    width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
-   
-
+    /*overflow-y: scroll; /* Verificar o comportamento do Scroll*/
 }
 
 .containerSobre {
@@ -312,14 +309,10 @@ display: flex;
 margin-left: 200px;
 font-size: 16px;
 margin-top: 8px;
-}
-.esqueceu {
-margin-left: 0;
-margin-top: 15px;
+
 }
 .esqueceu a:hover{
     color: var(--color-primary);
-    
 }
 
 .containerVagas {
@@ -337,9 +330,7 @@ margin-top: 15px;
     display: flex;
     justify-content: center;
     flex-direction: column;
-   
 }
-
 .content h1 {
     margin-top: 30px;
 }
@@ -371,35 +362,19 @@ margin-top: 15px;
      color: var(--color-primary);
    }
 
-   /*=================== Tela de Consulta Vagas ============ */
-
    .search-box {
-    width: 500.42px;
+    width: 1400.42px;
     height: 50.66px;
-    margin-left: 30px;
     top: 20.9px;
     left: 100.34px;
     border-radius: 26px;
     background: #44D5C526;
     display: flex;
-    /* justify-content:left; */
-    text-align: justify;
-    align-items:center;
+    justify-content: space-between;
     
     /* font-size: medium; */
     /* border-left: 90px;
     border-right: 90px; */
-  }
-  .search-button{
-    
-    color: #00DEBD;
-    margin-left: 38px;
-    position: relative;
-    margin-right: 30px;
-    justify-content: right;
-    text-align: center;
-  
-
   }
   .section {
     width: 60px;
@@ -411,17 +386,8 @@ margin-top: 15px;
     align-items: center;
   
   }
-  .pesquisa_vaga{
-    font-size: medium;
-    color: #00DEBD;
-    background: none;
-    outline: none;
-    font-size:20px;
-    border: none;
-
-    
-  }
   .search-text {
+  
    background: none;
    outline: none;
    font-size:20px;
@@ -442,28 +408,21 @@ margin-top: 15px;
   .Empresa {
   margin-top: 48px;
   background: #8b919026;
-  margin-left: 30px;
-  border-radius: 25px;
-  width: 500.42px;
-  height: 30.66px;
   
   }
   
-  .Localidade,
-  .Teste{
-    margin-top: 15px;  
+  .Localidade {
+    margin-top: 30px;
     background: #8b919026;
-    margin-left: 30px;
-    border-radius: 25px;
-    width: 500.42px;
-    height: 30.66px;
+  
   }
-
-
+  .Teste {
+    margin-top: 30px;
+    background: #8b919026;
+  }
   .link-inscricao {
-    margin-top: 15px;
+    margin-top: 16px;
     color: var(--color-primary);
-    margin-left: 50px;
   
  }
  .link-inscricao a:hover {
@@ -473,7 +432,7 @@ margin-top: 15px;
    color: aqua;
    margin-left: 30px;
    border-radius: 40px;
-   background:none;
+   background: none;
    outline: none;
    width: 300px;
    align-items: center;
@@ -671,35 +630,33 @@ margin-top: 15px;
  margin-left: 30px;
  }
 
-/*Inicio configuração página Senhacadastro*/
+/*Inicio configuração página cadastro de Senha*/
 
 .center-02{
     height: 63.5vh;
     margin: 90px 5vw 10px 1vw;
     width: 100vw;
- 
     /* margin-top: 30px; */
 }
 
 .fraseCadastro{
     color: var(--color-lighter);
-    /* height: 80px;
+    height: 80px;
     margin: 10px auto;
     padding: 20px 5px 5px 3px;
     text-align: center;
     width: 80vw;
-    margin-top: 30px; */
+    margin-top: 30px;
     
 }
 
 .formEmail{
-    /* align-items: center; */
+    align-items: center;
     display: flex;
     flex-direction: column;
     height: 150px;
     margin: 2px auto;
     width: 80vw;
-    margin-top: 30px;
 }
 
 .email{
@@ -721,7 +678,6 @@ margin-top: 15px;
     outline: none;
     width: 390px;
     color: white;
-    
 }
 
 .email img{
@@ -730,7 +686,7 @@ margin-top: 15px;
 }
 
 .formSenha{
-    /* align-items: center; */
+    align-items: center;
     border: none;
     display: flex;
     flex-direction: column;
@@ -775,16 +731,12 @@ margin-top: 15px;
 .politicas h5{
     color: var(--color-lighter);
     padding-left: 8px;
-  
 }
-/* .check h5{
-margin-left: 60px;
-} */
+
 .button-container{
-    margin: 80px;
+    margin: 0 auto;
     height: 70px;
     width: 400px;
-    
 }
 
 .button-2{
@@ -802,9 +754,9 @@ margin-left: 60px;
     height: 40px;
 }
 
-/* .espaco-3{
+.espaco-3{
     height: 30px;
     width: 41vw;
-} */
+}
 
-/*Final configuração página Senhacadastro*/
+/*Final configuração página cadastro*/
