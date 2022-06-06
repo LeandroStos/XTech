@@ -567,7 +567,27 @@ margin-top: 8px;
  display: flex;
  */
  }
- .sexo {
+ .Seletor {
+     margin-left: 30px;
+     color: white;
+     width: 400px;
+     height: 10px;
+     border: white;
+    
+     /* margin: 80px auto; */
+ }
+ .linguagens {
+     width: 100%;
+     background-color: none;
+     height: 30px;
+     border: radius 15px;
+     color:white;
+     background: #101527;
+     
+     }
+
+ .sexo ,
+ .Habilidades {
  color: white;
  margin-left: 30px;
  }
@@ -626,7 +646,7 @@ margin-top: 8px;
     
  }
  #feminino,
- #masculino,#outros {
+ #masculino,#outros, #Beck-end,#Front-end,#Full-Stack {
  margin-left: 30px;
  }
 
