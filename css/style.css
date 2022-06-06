@@ -656,7 +656,7 @@ margin-top: 8px;
     height: 63.5vh;
     margin: 90px 5vw 10px 1vw;
     width: 100vw;
-    /* margin-top: 30px; */
+    margin-top: 15px;
 }
 
 .fraseCadastro{
@@ -768,6 +768,7 @@ margin-top: 8px;
     height: 54px;
     margin: 2px 2px 2px 20px;
     width: 354px;
+    margin-bottom: 5px;
 }
 
 .espaco-2{
