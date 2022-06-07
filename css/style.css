@@ -168,6 +168,11 @@ main {
   
 }
 
+.box-container button{
+    background-color: rgba(68, 213, 197, 15%);
+    border-radius: var(--border-radius-default);
+}
+
 .center h1 {
     color: var(--color-lighter);
     font-size: var(--font-size-xxl);
@@ -185,9 +190,17 @@ main {
 .box-container {
     background-color: rgba(68, 213, 197, 15%);
     border-radius: var(--border-radius-default);
+    min-width: 330px;
     margin-left: 30vw;
     padding: 2vh;
     width: 40vw;
+}
+
+.box-container button{
+    background-color: rgba(73, 236, 217, 0.00);
+    border-radius: var(--border-radius-default);
+    border: 0;
+    cursor: pointer;
 }
 
 .icone {
@@ -281,7 +294,7 @@ footer {
     width: 209px;
 }
 
-button:hover {
+.button-01,#submit,.button-2:hover {
     background-color: var(--color-primary);
     color: var(--color-dark);
 }
