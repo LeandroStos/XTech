@@ -216,6 +216,7 @@ footer {
     background-color: #101527;
     position: absolute;
     text-align: center;
+    height: auto;
     width: 100vw;
 }
 
@@ -261,7 +262,7 @@ footer {
 .email-01,
 .senha-01 {
     background-color: rgba(73, 236, 217, 0.00);
-    color: var(--color-light); 
+    color: var(--color-light);
     border: none; 
     font-size: var(--font-size-md);
     height: 25px;
@@ -270,8 +271,9 @@ footer {
     margin-top: 20px;
 }
 
-.button-01 {
+#button2{
     background-color: var(--color-secondary);
+    margin: 20px 95px;
     border: none;
     border-radius: 25px;
     color: var(--color-lighter);
@@ -281,9 +283,11 @@ footer {
     width: 209px;
 }
 
-button:hover {
+button,#button2:hover {
     background-color: var(--color-primary);
     color: var(--color-dark);
+    width: 205px;
+    height: 55px;
 }
 
 /*Fim dos estilos página acesso */
@@ -653,42 +657,27 @@ margin-top: 8px;
 /*Inicio configuração página cadastro de Senha*/
 
 .center-02{
-    height: 63.5vh;
+    height: 72vh;
     margin: 90px 5vw 10px 1vw;
     width: 100vw;
     margin-top: 15px;
 }
 
-.fraseCadastro{
+.titulo{
     color: var(--color-lighter);
-    height: 80px;
-    margin: 10px auto;
-    padding: 20px 5px 5px 3px;
+    margin: 90px auto 30px ;
     text-align: center;
-    width: 80vw;
-    margin-top: 30px;
-    
+    padding: 15px;
+    font-size: 2em;
+    font-weight: 700;
 }
 
-.formEmail{
-    align-items: center;
+.informacoes{
     display: flex;
-    flex-direction: column;
-    height: 150px;
-    margin: 2px auto;
-    width: 80vw;
+    justify-content: center;
 }
 
-.email{
-    background-color: rgba(73, 236, 217, 0.15);
-    border: none;
-    border-radius: 25px;
-    height: 60px; 
-    width: 430px;
-    
-}
-
-.inputEmail{
+#email{
     background-color: rgba(73, 236, 217, 0.00);
     border: none;
     border-radius: 25px;
@@ -698,6 +687,16 @@ margin-top: 8px;
     outline: none;
     width: 390px;
     color: white;
+    
+}
+
+.email{
+    background-color: rgba(73, 236, 217, 0.15);
+    border: none;
+    border-radius: 25px;
+    height: 60px; 
+    width: 430px;
+    
 }
 
 .email img{
@@ -715,7 +714,7 @@ margin-top: 8px;
     width: 80vw;
 }
 
-.senha{
+.password{
     background-color: rgba(73, 236, 217, 0.15);
     border: none;
     border-radius: 25px;
@@ -724,7 +723,7 @@ margin-top: 8px;
     color: white;
 }
 
-.inputSenha{
+#password{
     background-color: rgba(73, 236, 217, 0.00);
     border-radius: 25px;
     border: none;
@@ -736,9 +735,14 @@ margin-top: 8px;
     color: white;
 }
 
-.senha img{
+.password img{
     margin-top: 12px;
     margin-left: 8px;
+}
+
+form label{
+    color: var(--color-lighter);
+    margin-left: 30px;
 }
 
 .politicas{
@@ -759,7 +763,7 @@ margin-top: 8px;
     width: 400px;
 }
 
-.button-2{
+#button{
     background-color: var(--color-secondary);
     border-radius: 25px;
     border: none;

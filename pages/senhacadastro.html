@@ -31,49 +31,38 @@
 
     <main>
         <div class="center-02">
-            <div class="fraseCadastro">
-                <h1>Vamos lá! Junte-se a nós.</h1>
-            </div>
-            
-            <div class="formEmail">
-                <form class="email">
-                    <img src="/images/Pesquisa.png" height="25px" width="25px">
-                    <input type="text" class="inputEmail" value="" placeholder="Digite o seu email">
+            <div class="titulo">Vamos lá! Junte-se a nós.</div>
+            <div class="informacoes">
+                <form>
+                    <div class="email">
+                        <img src="/images/Pesquisa.png" height="25px" width="25px">
+                        <input type="email" id="email" name="email" placeholder="digite seu email" required>
+                    </div>
+                    <br />
+                    <div class="email">
+                        <img src="/images/Pesquisa.png" height="25px" width="25px">
+                        <input type="email" id="email" name="email" placeholder="redigite sua email" required>
+                    </div>
+                    <br />
+                    <div class="password">
+                        <img src="/images/Pesquisa.png" height="25px" width="25px">
+                        <input type="password" id="password"name="password" placeholder="digite sua senha" required>
+                    </div>
+                    <br />
+                    <div class="password">
+                        <img src="/images/Pesquisa.png" height="25px" width="25px">
+                        <input type="password" id="password" name="password" placeholder="redigite sua senha" required>
+                    </div>
+                    <br />
+                    <label>
+                        <input type="checkbox">
+                        De acordo com as politicas de privacidade
+                    </label>
+                    <br />
+                    <input type="submit" id="button2" name="button">
                 </form>
-                <div class="espaco"></div>
-                <br></br>
-                <form class="email">
-                    <img src="/images/Pesquisa.png" height="25px" width="25px">
-                    <input type="text" class="inputEmail" value="" placeholder="Digite o seu email">
-                </form>
-            </div><!--formEmail-->
-
-            <br></br>
-
-            <div class="formSenha">
-                <form class="senha">
-                    <img src="/images/Pesquisa.png" height="25px" width="25px">
-                    <input type="password" class="inputSenha" value="" placeholder="Digite sua senha">
-                </form>
-                <br></br>
-                <!-- <div class="espaco"></div> -->
-                <form class="senha">
-                    <img src="/images/Pesquisa.png" height="25px" width="25px">
-                    <input type="password" class="inputSenha" value="" placeholder="Confirme sua senha">
-                </form><!--formSenha-->
-            </div>
-            <br></br>
-            <div class="politicas">
-                
-                <input type="checkbox" class="Check" value="Box">
-                <h5>De acordo com as politicas de privacidade</h5>
-            </div>
-            <div class="button-container">
-                <button class="button-2" type="submit">Cadastrar</button>
-            </div>
-                    
-        </div><!--center-->
-     <br></br>
+            </div><!--informacoes-->
+        </div><!--center-02-->
     </main>
     <!-- <br></br> -->
     <footer>
@@ -83,7 +72,3 @@
             <div class="img-3"><i class="fa-brands fa-instagram-square"></i></div>
         </div><!--barraRodape-->
     </footer>
-
-</body>
-
-</html>
