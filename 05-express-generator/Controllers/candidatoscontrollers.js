@@ -72,8 +72,8 @@ controller.update = async (req, res) => {
         nome,
         sobrenome,
         email,
-        c´f,
-        telefone,,
+        cpf,
+        telefone,
         sexo,
         data_nascimento,
         endereco,
@@ -85,7 +85,7 @@ controller.update = async (req, res) => {
         admin: !!admin,
       };
     } else {
-      return usuario;
+      return candidato;
     }
   });
   setcandidatos(candidatos);
@@ -93,7 +93,7 @@ controller.update = async (req, res) => {
 };
 
 controller.exclude = (req, res) =>
-  res.render("usuario-excluir", {
+  res.render("candidato-excluir", {
     title: `Excluir Usuário ${req.params.id}`,
     usuario: getUsuarioPorId(req.params.id),
   });
@@ -113,6 +113,6 @@ controller.show = (req, res) =>
   });
 
 controller.index = async (req, res) =>
-  res.render("candidatos", { title: `Usuários`, candidatos: await getcandidatos() });
+  res.render("candidatos", { title: `Candidatos`, candidatos: await getcandidatos() });
 
 module.exports = controller;
