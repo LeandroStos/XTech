@@ -9,12 +9,7 @@
     --color-secondary: #00BCDA;
     --color-dark: #101527;
     --color-darker: #101527;
-    /* Padrão: Espaçamentos */
-    --spacing-size-default: 20px;
-    --spacing-size-quarter: calc(.25 * var(--spacing-size-default));
-    --spacing-size-third: calc(.33 * var(--spacing-size-default));
-    --spacing-size-half: calc(.5 * var(--spacing-size-default));
-    --spacing-size-double: calc(2 * var(--spacing-size-default));
+
     /* Padrão: Fontes - Tamanhos */
     --font-size-default: 20px;
     --font-size-xxs: calc(.7 * var(--font-size-default));
@@ -57,25 +52,12 @@ body {
     color: var(--color-dark);
 }
 
-
-.logo_cinza {
- display: flex;
- justify-content: right;
- margin-bottom: 50px;
- margin-top: 20px;
- background: none;
- margin-right: 60px;
-}
-
-/*Para as coisas não aparecerem*/
-.none {
-    display: none;
-}
-
 /*FIM Ajustes Padrões*/
 
 /*INICIO AJUSTES MENU Ajustes Padrões*/
 header {
+    display: flex;
+    flex-direction: column;
     position: sticky;
     width: 100vw;
     justify-content: center;
@@ -84,13 +66,11 @@ header {
 
 .menu-2 {
     background-color: var(--color-dark);
-    display: flex;
     height: 76px;
     justify-content: space-around;
 }
 
 .menu-2 img {
-    display: flex;
     padding: 13px 2% 10px 2%;
     justify-content: center;
     align-items: center;
@@ -283,7 +263,7 @@ footer {
     width: 209px;
 }
 
-button,#button2:hover {
+#button2:hover {
     background-color: var(--color-primary);
     color: var(--color-dark);
     width: 205px;
