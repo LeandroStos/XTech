@@ -88,7 +88,8 @@ header {
 header .cabecalho {
     background-color: var(--color-dark);
     display: flex;
-    height: 4vw;
+    width: 100vw;
+    height: 70px;
     justify-content: center;
     align-items: center;
 }
@@ -105,7 +106,7 @@ header .menu {
     align-items: center;
     background: linear-gradient(269.83deg, var(--color-primary) 8.79%, var(--color-secondary) 65.48%);
     display: flex;
-    height: 3vw;
+    height: 50px;
     justify-content: space-around;
     width: 100vw;
 }
@@ -140,7 +141,7 @@ main {
 .center {
     /* display: flex;
     width: 100vw; */
-    height: 75vh;
+    height: calc(100vh - 206px);
     flex-direction: row;
     padding: 15vh 0 0 0;
     justify-content: center;
@@ -165,6 +166,7 @@ main {
 .box-container {
     background-color: rgba(68, 213, 197, 15%);
     border-radius: var(--border-radius-default);
+    min-width: 350px;
     margin-left: 30vw;
     padding: 2vh;
     width: 40vw;
@@ -175,6 +177,12 @@ main {
     font-size: 25px;
     display: inline-block;
     padding-right: 5px;
+}
+
+.lupa {
+    background-color: rgba(73, 236, 217, 0.00);
+    border: none;
+    cursor: pointer;
 }
 
 .search {
