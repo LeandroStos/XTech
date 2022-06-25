@@ -825,6 +825,21 @@ margin-top: 8px;
     bottom: 100px;
   
 }
+.button_empresas  .button_parceiros {
+    color: var(--white);
+    font-weight: 500;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--secondary);
+    border: 1px solid var(--secondary);
+    border-radius: 2px;
+    cursor: pointer;
+}
+.button_empresas {
+    padding: 1.5rem 1.125rem;
+    font-size: 1rem;
+}
 .Fique_por_Dentro {
  color: white;
  margin-left: 30px;
