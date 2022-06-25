@@ -9,12 +9,7 @@
     --color-secondary: #00BCDA;
     --color-dark: #101527;
     --color-darker: #101527;
-    /* Padrão: Espaçamentos */
-    --spacing-size-default: 20px;
-    --spacing-size-quarter: calc(.25 * var(--spacing-size-default));
-    --spacing-size-third: calc(.33 * var(--spacing-size-default));
-    --spacing-size-half: calc(.5 * var(--spacing-size-default));
-    --spacing-size-double: calc(2 * var(--spacing-size-default));
+
     /* Padrão: Fontes - Tamanhos */
     --font-size-default: 20px;
     --font-size-xxs: calc(.7 * var(--font-size-default));
@@ -57,25 +52,13 @@ body {
     color: var(--color-dark);
 }
 
-
-.logo_cinza {
- display: flex;
- justify-content: right;
- margin-bottom: 50px;
- margin-top: 20px;
- background: none;
- margin-right: 60px;
-}
-
-/*Para as coisas não aparecerem*/
-.none {
-    display: none;
-}
-
 /*FIM Ajustes Padrões*/
 
 /*INICIO AJUSTES MENU Ajustes Padrões*/
-header {
+
+.header-1 {
+    display: flex;
+    flex-direction: column;
     position: sticky;
     width: 100vw;
     justify-content: center;
@@ -83,22 +66,26 @@ header {
 }
 
 .menu-2 {
-    background-color: var(--color-dark);
     display: flex;
-    height: 76px;
     justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-dark);
+    position: sticky;
+    width: 100vw;
+    height: 75px;
 }
 
 .menu-2 img {
-    display: flex;
     padding: 13px 2% 10px 2%;
-    justify-content: center;
-    align-items: center;
     width: 10vw;
 }
 
 .menuEsquerdaAcesso {
     margin: 30px 25px 2px 2px;
+}
+
+.menuEsquerdaAcesso-2 {
+    margin: 0;
 }
 
 .menuEsquerdaAcesso a:hover{
@@ -108,7 +95,8 @@ header {
 header .cabecalho {
     background-color: var(--color-dark);
     display: flex;
-    height: 4vw;
+    width: 100vw;
+    height: 70px;
     justify-content: center;
     align-items: center;
 }
@@ -119,13 +107,14 @@ header .cabecalho img {
     justify-content: center;
     align-items: center;
     width: 18vw;
+    min-width: 200px;
 }
 
 header .menu {
     align-items: center;
     background: linear-gradient(269.83deg, var(--color-primary) 8.79%, var(--color-secondary) 65.48%);
     display: flex;
-    height: 3vw;
+    height: 50px;
     justify-content: space-around;
     width: 100vw;
 }
@@ -160,9 +149,9 @@ main {
 .center {
     /* display: flex;
     width: 100vw; */
-    height: 75vh;
-    flex-direction: row;
-    padding: 15vh 0 0 0;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 206px);
     justify-content: center;
     align-items: center;
   
@@ -171,11 +160,12 @@ main {
 .center h1 {
     color: var(--color-lighter);
     font-size: var(--font-size-xxl);
-    margin-bottom: 05vw;
     font-size: 2.3em;
+}
+
+.titulo {
+    height: 190px;
     text-align: center;
-    bottom: 100px;
-  
 }
 
 .center b {
@@ -185,7 +175,7 @@ main {
 .box-container {
     background-color: rgba(68, 213, 197, 15%);
     border-radius: var(--border-radius-default);
-    margin-left: 30vw;
+    min-width: 350px;
     padding: 2vh;
     width: 40vw;
 }
@@ -195,6 +185,12 @@ main {
     font-size: 25px;
     display: inline-block;
     padding-right: 5px;
+}
+
+.lupa {
+    background-color: rgba(73, 236, 217, 0.00);
+    border: none;
+    cursor: pointer;
 }
 
 .search {
@@ -216,6 +212,7 @@ footer {
     background-color: #101527;
     position: absolute;
     text-align: center;
+    height: auto;
     width: 100vw;
 }
 
@@ -261,7 +258,7 @@ footer {
 .email-01,
 .senha-01 {
     background-color: rgba(73, 236, 217, 0.00);
-    color: var(--color-light); 
+    color: var(--color-light);
     border: none; 
     font-size: var(--font-size-md);
     height: 25px;
@@ -270,8 +267,9 @@ footer {
     margin-top: 20px;
 }
 
-.button-01 {
+#button2{
     background-color: var(--color-secondary);
+    margin: 20px 95px;
     border: none;
     border-radius: 25px;
     color: var(--color-lighter);
@@ -281,9 +279,11 @@ footer {
     width: 209px;
 }
 
-button:hover {
+#button2:hover {
     background-color: var(--color-primary);
     color: var(--color-dark);
+    width: 205px;
+    height: 55px;
 }
 
 /*Fim dos estilos página acesso */
@@ -653,42 +653,27 @@ margin-top: 8px;
 /*Inicio configuração página cadastro de Senha*/
 
 .center-02{
-    height: 63.5vh;
+    height: 72vh;
     margin: 90px 5vw 10px 1vw;
     width: 100vw;
     margin-top: 15px;
 }
 
-.fraseCadastro{
+.titulo-2{
     color: var(--color-lighter);
-    height: 80px;
-    margin: 10px auto;
-    padding: 20px 5px 5px 3px;
+    margin: 90px auto 30px ;
     text-align: center;
-    width: 80vw;
-    margin-top: 30px;
-    
+    padding: 15px;
+    font-size: 2em;
+    font-weight: 700;
 }
 
-.formEmail{
-    align-items: center;
+.informacoes{
     display: flex;
-    flex-direction: column;
-    height: 150px;
-    margin: 2px auto;
-    width: 80vw;
+    justify-content: center;
 }
 
-.email{
-    background-color: rgba(73, 236, 217, 0.15);
-    border: none;
-    border-radius: 25px;
-    height: 60px; 
-    width: 430px;
-    
-}
-
-.inputEmail{
+#email{
     background-color: rgba(73, 236, 217, 0.00);
     border: none;
     border-radius: 25px;
@@ -698,6 +683,16 @@ margin-top: 8px;
     outline: none;
     width: 390px;
     color: white;
+    
+}
+
+.email{
+    background-color: rgba(73, 236, 217, 0.15);
+    border: none;
+    border-radius: 25px;
+    height: 60px; 
+    width: 430px;
+    
 }
 
 .email img{
@@ -715,7 +710,7 @@ margin-top: 8px;
     width: 80vw;
 }
 
-.senha{
+.password{
     background-color: rgba(73, 236, 217, 0.15);
     border: none;
     border-radius: 25px;
@@ -724,7 +719,7 @@ margin-top: 8px;
     color: white;
 }
 
-.inputSenha{
+#password{
     background-color: rgba(73, 236, 217, 0.00);
     border-radius: 25px;
     border: none;
@@ -736,9 +731,14 @@ margin-top: 8px;
     color: white;
 }
 
-.senha img{
+.password img{
     margin-top: 12px;
     margin-left: 8px;
+}
+
+form label{
+    color: var(--color-lighter);
+    margin-left: 30px;
 }
 
 .politicas{
@@ -759,7 +759,7 @@ margin-top: 8px;
     width: 400px;
 }
 
-.button-2{
+#button{
     background-color: var(--color-secondary);
     border-radius: 25px;
     border: none;
@@ -781,6 +781,7 @@ margin-top: 8px;
 }
 
 /*Final configuração página cadastro*/
+<<<<<<< HEAD
 /* estilização da area logada*/
 
 .center h3 {
@@ -843,4 +844,105 @@ margin-top: 8px;
 .Fique_por_Dentro {
  color: white;
  margin-left: 30px;
+=======
+
+/*Parte do menu mobile */
+
+.menuMobile{
+    display: none;
+    height: 40px;
+    width: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+.mmLine{
+    height: 3px;
+    background-color: #fff;
+}
+
+/*------------------------*/
+
+
+/* configurações para respansividade */
+
+@media(min-width: 450px) and (max-width: 750px) {
+
+    .menuEsquerda, .menuDireita {
+        display: none;
+    }
+
+    .menuMobile{
+        display: flex;
+        margin-left: 85%;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .titulo {
+        height: 140px;
+        text-align: center;
+    }
+
+    .center h1 {
+        font-size: 2.0em;
+    }
+
+    .box-container {
+        padding: 1.5vh;
+    }
+
+    .icone {
+        font-size: 20px;
+        padding-left: 6px;
+    }
+}
+
+
+@media (max-width: 450px) {
+
+    header .cabecalho img {
+        width: 100px;
+    }
+
+    .menuEsquerda, .menuDireita {
+        display: none;
+    }
+
+    .menuMobile{
+        display: flex;
+        margin-left: 78%;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 30px;
+        width: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-right: 10px
+    }
+
+    .mmLine{
+        height: 2px;
+    }
+     
+    .titulo {
+        height: 95px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .center h1 {
+        font-size: 1.5em;
+    }
+
+    .box-container {
+        padding: 1.3vh;
+    }
+
+    .icone {
+        font-size: 20px;
+        padding-left: 6px;
+    }
+>>>>>>> 970baa345c9767fc0f82ad329ce495f2738df4e6
 }
