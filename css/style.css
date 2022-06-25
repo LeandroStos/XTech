@@ -55,7 +55,8 @@ body {
 /*FIM Ajustes Padrões*/
 
 /*INICIO AJUSTES MENU Ajustes Padrões*/
-header {
+
+.header-1 {
     display: flex;
     flex-direction: column;
     position: sticky;
@@ -65,20 +66,26 @@ header {
 }
 
 .menu-2 {
-    background-color: var(--color-dark);
-    height: 76px;
+    display: flex;
     justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-dark);
+    position: sticky;
+    width: 100vw;
+    height: 75px;
 }
 
 .menu-2 img {
     padding: 13px 2% 10px 2%;
-    justify-content: center;
-    align-items: center;
     width: 10vw;
 }
 
 .menuEsquerdaAcesso {
     margin: 30px 25px 2px 2px;
+}
+
+.menuEsquerdaAcesso-2 {
+    margin: 0;
 }
 
 .menuEsquerdaAcesso a:hover{
