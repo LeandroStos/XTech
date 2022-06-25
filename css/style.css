@@ -519,8 +519,9 @@ margin-top: 8px;
 
    .inputUser{
     color: white;
-    
-   }
+    padding: 05px;
+    margin-bottom: auto;
+  }
 
    .label_input{
     /* position: absolute;    =>  Distancia ou aproxima a label da linha de input */
@@ -530,21 +531,35 @@ margin-top: 8px;
      transition: .5px;
      color:white         
    } 
-   .inputUser_T:focus ~ .label_input,
+   /* .inputUser_T:focus ~ .label_input,
    .inputUser_T:valid{
      /* top: -20px; */
      /* font-size: 8px; */
-     color:white;
+     /* color:white; */
      /* margin-left: 68px; */
-     left: 0.8rem;
- }  
-/*TESTE*/
-.inputBox:focus~ .label_input,
+     /* left: 0.8rem; */
+     /* }   */ 
+
+/* .inputBox:focus~ .label_input,
 .inputUser_T:valid{
   transition: top -20px;
+} */
+.inputUser_T ~ .label_input, 
+.inputUser_T:not(:placeholder-shown).inputUser_T:not(:focus) ~ .label_input {
+    top: -0.5rem;
+    font-size: 0.8rem;
+    left: 0.8rem;
+    color: #18ffff;
+
 }
+.formbox:hover {
+    border-color: #adffff;
 
-
+    /* Change border when input focus*/
+  }
+/* .inputuser_T:focus {
+    text-decoration-color: #18ffff;
+  } */
 
    .inputBox{
      position: relative;
@@ -564,6 +579,10 @@ margin-top: 8px;
  .sexo {
  color: white;
  margin-left: 30px;
+ }
+ .Habilidades {
+    color: white;
+    margin-left: 30px;
  }
  .date,
  .textcep,
@@ -620,7 +639,7 @@ margin-top: 8px;
     
  }
  #feminino,
- #masculino,#outros {
+ #masculino,#outros,#Front-end,#Beck-end,#Full-Stack {
  margin-left: 30px;
  }
 
@@ -631,6 +650,18 @@ margin-top: 8px;
     margin: 90px 5vw 10px 1vw;
     width: 100vw;
     /* margin-top: 30px; */
+}
+.linguagens {
+    margin-left: 30px;
+    color: white;
+    padding: 4px;
+    background: none;
+    border-color: white;
+
+    }
+.seletor {
+    background-color: none;
+    color: #101527;
 }
 
 .fraseCadastro{
