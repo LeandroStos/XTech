@@ -97,9 +97,10 @@ header {
     width: 10vw;
 }
 
-.menuEsquerdaAcesso {
+.menuEsquerdaAcesso  {
     margin: 30px 25px 2px 2px;
 }
+
 
 .menuEsquerdaAcesso a:hover{
     color: var(--color-primary);
