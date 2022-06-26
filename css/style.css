@@ -528,21 +528,24 @@ margin-top: 8px;
      width: 100%;
      letter-spacing: 2px;
      
+     
    }
 
    .inputUser{
     color: white;
-    padding: 05px;
-    margin-bottom: auto;
+    
+   
   }
 
-   .label_input{
+   .label_input {
     /* position: absolute;    =>  Distancia ou aproxima a label da linha de input */
      top: 0px;
      left:0px;
      pointer-events: none;
      transition: .5px;
-     color:white         
+     color:white;
+     
+             
    } 
    /* .inputUser_T:focus ~ .label_input,
    .inputUser_T:valid{
@@ -577,7 +580,8 @@ margin-top: 8px;
    .inputBox{
      position: relative;
      margin-left: 30px;
-     margin-left: 30px;
+   
+     
    }
    
 
@@ -670,11 +674,14 @@ margin-top: 8px;
     padding: 4px;
     background: none;
     border-color: white;
+   
 
     }
 .seletor {
     background-color: none;
-    color: #101527;
+    color: white;
+    background: none;
+
 }
 
 .fraseCadastro{
