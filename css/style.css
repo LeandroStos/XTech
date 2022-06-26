@@ -795,7 +795,6 @@ margin-top: 8px;
  .dicas_xtech h5 {
     color: white;
     margin-left: 50px;
-<<<<<<< HEAD
     margin-top: 100px;
     
  }
@@ -848,7 +847,7 @@ margin-top: 8px;
  .Fique_por_Dentro {
   color: white;
   margin-left: 30px;
- =======
+ }
  
  /*Parte do menu mobile */
  
@@ -948,143 +947,4 @@ margin-top: 8px;
          font-size: 20px;
          padding-left: 6px;
      }
-=======
-    margin-top: 15px;  
 }
-.Imagem_carreira li a {
-    margin-left: 30px;
-  
-}
-.tips_item-link{
-    margin-left: 30px;
-}
-
-
-.center_logado h1 {
-    color: var(--color-lighter);
-    font-size: var(--font-size-xxl);
-    margin-bottom:40px;
-    font-size: 2.3em;
-    text-align: center;
-    bottom: 100px;
-  
-}
-.button_empresas  .button_parceiros {
-    color: var(--white);
-    font-weight: 500;
-    line-height: 1;
-    text-align: center;
-    text-decoration: none;
-    background-color: var(--secondary);
-    border: 1px solid var(--secondary);
-    border-radius: 2px;
-    cursor: pointer;
-}
-.button_empresas {
-    padding: 1.5rem 1.125rem;
-    font-size: 1rem;
-}
-.Fique_por_Dentro {
- color: white;
- margin-left: 30px;
-
-/*Parte do menu mobile */
-
-.menuMobile{
-    display: none;
-    height: 40px;
-    width: 40px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-right: 20px;
-}
-
-.mmLine{
-    height: 3px;
-    background-color: #fff;
-}
-
-/*------------------------*/
-
-
-/* configurações para respansividade */
-
-@media(min-width: 450px) and (max-width: 750px) {
-
-    .menuEsquerda, .menuDireita {
-        display: none;
-    }
-
-    .menuMobile{
-        display: flex;
-        margin-left: 85%;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
-    .titulo {
-        height: 140px;
-        text-align: center;
-    }
-
-    .center h1 {
-        font-size: 2.0em;
-    }
-
-    .box-container {
-        padding: 1.5vh;
-    }
-
-    .icone {
-        font-size: 20px;
-        padding-left: 6px;
-    }
-}
-
-
-@media (max-width: 450px) {
-
-    header .cabecalho img {
-        width: 100px;
-    }
-
-    .menuEsquerda, .menuDireita {
-        display: none;
-    }
-
-    .menuMobile{
-        display: flex;
-        margin-left: 78%;
-        flex-direction: column;
-        justify-content: space-around;
-        height: 30px;
-        width: 30px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        margin-right: 10px
-    }
-
-    .mmLine{
-        height: 2px;
-    }
-     
-    .titulo {
-        height: 95px;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    .center h1 {
-        font-size: 1.5em;
-    }
-
-    .box-container {
-        padding: 1.3vh;
-    }
-
-    .icone {
-        font-size: 20px;
-        padding-left: 6px;
-    }
-}
->>>>>>> 996736b546ec4139a3ad668e4bc14667ca360d11
