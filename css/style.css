@@ -95,6 +95,7 @@ header {
     padding: 13px 2% 10px 2%;
     justify-content: center;
     align-items: center;
+    min-width: 100px;
     width: 10vw;
 }
 
@@ -925,6 +926,35 @@ margin-top: 8px;
          font-size: 20px;
          padding-left: 6px;
      }
+
+     .center-2 h1{
+        margin-top: 10%;
+        height: 90px;
+        font-size: 2.3em;
+    }
+
+     .box-container-acesso form{
+        display: flex;
+        flex-direction: column;
+     }
+
+     .box1 {
+        min-width: 260px;
+        width: 17vw;
+        margin: 5px;
+        height: 60px;
+    
+    }
+
+     .button-01 {
+        font-size: var(--font-size-md);
+        min-width: 200px;
+        height: 60px;
+        margin: 0 auto;
+        margin-top: 4%;
+        transition: 0.4s;
+        width: 10vw;
+    }
  }
  
  
@@ -972,4 +1002,33 @@ margin-top: 8px;
          font-size: 20px;
          padding-left: 6px;
      }
+
+     .center-2 h1{
+        margin-top: 10%;
+        height: 90px;
+        font-size: 2.3em;
+    }
+
+     .box-container-acesso form{
+        display: flex;
+        flex-direction: column;
+     }
+
+     .box1 {
+        min-width: 260px;
+        width: 17vw;
+        margin: 5px;
+        height: 60px;
+    
+    }
+
+     .button-01 {
+        font-size: var(--font-size-md);
+        min-width: 200px;
+        height: 60px;
+        margin: 0 auto;
+        margin-top: 4%;
+        transition: 0.4s;
+        width: 10vw;
+    }
 }
