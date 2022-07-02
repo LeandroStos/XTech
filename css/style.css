@@ -51,6 +51,7 @@
 body {
     background: linear-gradient(104.94deg, rgba(16, 21, 39, 0.85) 42.49%, rgba(16, 21, 39, 0.42) 96.36%), url(../images/fundo.jpg);
     backdrop-filter: blur(10px);
+    overflow-x: hidden;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Inter', sans-serif;
@@ -158,20 +159,21 @@ main {
 }
 
 .center {
-    /* display: flex;
+    /* 
     width: 100vw; */
-    height: calc(100vh - 210px);
-    flex-direction: row;
-    padding: 15vh 0 0 0;
+    display: flex;
     justify-content: center;
     align-items: center;
-  
+    width: 100vw;
+    flex-direction: column;
+    height: calc(100vh - 210px);
 }
 
 .center h1 {
     color: var(--color-lighter);
     font-size: var(--font-size-xxl);
-    margin-bottom: 05vw;
+    margin-bottom: 02vh;
+    height: 150px;
     font-size: 2.3em;
     text-align: center;
     bottom: 100px;
@@ -185,7 +187,6 @@ main {
 .box-container {
     background-color: rgba(68, 213, 197, 15%);
     border-radius: var(--border-radius-default);
-    margin-left: 30vw;
     padding: 2vh;
     min-width: 320px;
     width: 40vw;
