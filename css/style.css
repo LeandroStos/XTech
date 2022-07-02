@@ -108,7 +108,7 @@ header {
 header .cabecalho {
     background-color: var(--color-dark);
     display: flex;
-    height: 4vw;
+    height: 76px;
     justify-content: center;
     align-items: center;
 }
@@ -125,7 +125,7 @@ header .menu {
     align-items: center;
     background: linear-gradient(269.83deg, var(--color-primary) 8.79%, var(--color-secondary) 65.48%);
     display: flex;
-    height: 3vw;
+    height: 48px;
     justify-content: space-around;
     width: 100vw;
 }
