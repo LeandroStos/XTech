@@ -87,6 +87,7 @@ header {
     background-color: var(--color-dark);
     display: flex;
     height: 76px;
+    align-items: center;
     justify-content: space-around;
 }
 
@@ -97,10 +98,6 @@ header {
     align-items: center;
     min-width: 100px;
     width: 10vw;
-}
-
-.menuEsquerdaAcesso {
-    margin: 30px 25px 2px 2px;
 }
 
 .menuEsquerdaAcesso a:hover{
