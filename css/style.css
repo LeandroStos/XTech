@@ -160,7 +160,7 @@ main {
 .center {
     /* display: flex;
     width: 100vw; */
-    height: 75vh;
+    height: calc(100vh - 210px);
     flex-direction: row;
     padding: 15vh 0 0 0;
     justify-content: center;
