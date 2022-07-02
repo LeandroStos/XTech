@@ -196,6 +196,14 @@ main {
     height: 120px;
     font-size: 3.0em;
 }
+
+.center-3 {
+    /* 
+    width: 100vw; */
+    display: flex;
+    width: 100vw;
+    height: calc(100vh - 162px)
+}
 .box-container {
     background-color: rgba(68, 213, 197, 15%);
     border-radius: var(--border-radius-default);
@@ -732,9 +740,10 @@ margin-top: 8px;
 .email img{
     margin-top: 12px;
     margin-left: 8px;
+    margin-right: 5px;
 }
 
-.formSenha{
+.formPassword{
     align-items: center;
     border: none;
     display: flex;
@@ -744,7 +753,7 @@ margin-top: 8px;
     width: 80vw;
 }
 
-.senha{
+.password{
     background-color: rgba(73, 236, 217, 0.15);
     border: none;
     border-radius: 25px;
@@ -753,7 +762,7 @@ margin-top: 8px;
     color: white;
 }
 
-.inputSenha{
+.inputPassword{
     background-color: rgba(73, 236, 217, 0.00);
     border-radius: 25px;
     border: none;
@@ -763,6 +772,21 @@ margin-top: 8px;
     outline: none;
     width: 390px;
     color: white;
+}
+
+.password img{
+    margin-top: 12px;
+    margin-left: 8px;
+    margin-right: 5px;
+}
+
+#email,#password{
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 16px;
+    color: white;
+    width: 90%;
 }
 
 .senha img{
