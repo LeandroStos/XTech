@@ -174,7 +174,8 @@ main {
     color: var(--color-lighter);
     font-size: var(--font-size-xxl);
     margin-bottom: 02vh;
-    height: 18vh;
+    margin-top: -45px;
+    height: 17vh;
     font-size: 2.3em;
     text-align: center;
     bottom: 100px;
