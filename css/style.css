@@ -187,6 +187,7 @@ main {
     border-radius: var(--border-radius-default);
     margin-left: 30vw;
     padding: 2vh;
+    min-width: 320px;
     width: 40vw;
 }
 
@@ -195,6 +196,12 @@ main {
     font-size: 25px;
     display: inline-block;
     padding-right: 5px;
+}
+
+button.lupa {
+    background-color: rgba(73, 236, 217, 0.00);
+    border-radius: var(--border-radius-default);
+    border: 0;
 }
 
 .search {
