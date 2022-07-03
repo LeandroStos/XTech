@@ -244,7 +244,7 @@ button.lupa {
     color: var(--color-lighter);
     font-size: var(--font-size-xs);
     line-height: 1.8vw;
-    padding-left: 3vh;
+    padding-left: 2vh;
     position: fixed;
     width: 40%;
 }
@@ -1004,6 +1004,11 @@ margin-top: 8px;
         width: 10vw;
     }
 
+    .search {
+        min-width: 340px; 
+        padding-left: 5px;
+    }
+
     .email, .password{
         background-color: rgba(73, 236, 217, 0.15);
         border: none;
@@ -1141,6 +1146,11 @@ margin-top: 8px;
 
     .informacoes form{
         align-items: center;
+    }
+
+    .search {
+        min-width: 250px; 
+        padding-left: 5px;
     }
 
     .email, .password{
