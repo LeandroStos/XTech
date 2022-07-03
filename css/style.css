@@ -204,6 +204,18 @@ main {
     width: 100vw;
     height: calc(100vh - 162px)
 }
+
+.titulo {
+    height: 140px;
+    text-align: center;
+    text-align: justify;
+    font-size: 0.8em;
+}
+
+.checkbox{
+    color: #fff;
+}
+
 .box-container {
     background-color: rgba(68, 213, 197, 15%);
     border-radius: var(--border-radius-default);
@@ -301,6 +313,11 @@ footer {
     margin-top: 20px;
 }
 
+label.checkbox{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 .button-01 {
     background-color: var(--color-secondary);
     border: none;
@@ -313,7 +330,20 @@ footer {
     width: 10vw;
 }
 
-.button-01:hover {
+#button2{
+    background-color: var(--color-secondary);
+    border: none;
+    border-radius: 25px;
+    color: var(--color-lighter);
+    font-size: var(--font-size-md);
+    min-width: 200px;
+    height: 60px;
+    transition: 0.4s;
+    margin: 15px 25% 8px 25%;
+    align-items: center;
+}
+
+.button-01,#button2:hover {
     background-color: var(--color-primary);
     color: var(--color-dark);
 }
@@ -931,11 +961,6 @@ margin-top: 8px;
          justify-content: space-around;
      }
  
-     .titulo {
-         height: 140px;
-         text-align: center;
-     }
- 
      .center h1 {
          font-size: 2.0em;
      }
@@ -1007,11 +1032,12 @@ margin-top: 8px;
      }
       
      .titulo {
-         height: 95px;
+         height: 75px;
+         color: #fff;
          text-align: center;
          margin-bottom: 20px;
      }
- 
+
      .center h1 {
          font-size: 1.5em;
      }
