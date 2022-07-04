@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
     <link rel="icon" type="image/png" sizes="50x50" href="images/favicon.png">
     <title>XTech | O seu primeiro passo na programação!</title>
 </head>
@@ -19,13 +19,13 @@
     <header>
         <div class="menu-2">
             <div class="imagemX">
-                <img src="images/logo_vertical.png" title="Xtech" />
+                <img src="/images/logo_vertical.png" title="Xtech" />
             </div>
             <!--imagemX-->
             <div class="menuEsquerdaAcesso">
                 <ul>
-                    <li><a href="/acesso.html" title="Entrar">Entrar</a></li>
-                    <li><a href="/cadastro_candidatos/cadastro_candidatos.html" title="Cadastre-se">Cadastre-se</a></li>
+                    <li><a href="/pages/acesso.html" title="Entrar">Entrar</a></li>
+                    <li><a href="/pages/cadastro_candidatos.html" title="Cadastre-se">Cadastre-se</a></li>
                 </ul>
             </div>
         </div>
@@ -36,32 +36,39 @@
         <div class="center">
             <h1>Acesse a sua conta</h1>
             <div class="box-container-acesso">
+                <form>
+                    <div class="box1">
+                        <label>
+                            <img src="/images/Pesquisa.png" height="25px" width="25px">
+                            <input type="text" class="email-01" value="" placeholder="           Digite seu Email">
+                        </label>
+                    </div>
 
-                <form class="input_01">
-                    <img src="./images/Pesquisa.png" height="25px" width="25px">
-                    <input type="text" class="email-01" value="" placeholder="           Digite seu Email">
+                    <div class="box1">
+                        <label>
+                            <img src="/images/Pesquisa.png" height="25px" width="25px">
+                            <input type="password" class="senha-01" value="" placeholder="        Digite sua senha">
+                        </label>
+                    </div>
+
+                    <button class="button-01" type="submit" value="Enviar">Acessar</button>    
                 </form>
+                <br />
+            <div class="esqueceu">
 
-                <div class="espaco"></div>
-                <!--serve para dar espaçamento entre as barras de formulário-->
+                <a href="/pages/senhacadastro.html" title="Entrar">Esqueceu sua Senha?</a>
 
-                <form class="input_01">
-                    <img src="./images/Pesquisa.png" height="25px" width="25px">
-                    <input type="password" class="senha-01" value="" placeholder="        Digite sua senha">
 
-                </form>
-
-                <div class="espaco"></div>
-                <button class="button-01" type="submit" value="Enviar">Enviar</button>
             </div>
-            <!--box-container-acesso-->
+        </div>
+        <!--box-container-acesso-->
         </div>
         <!--center-->
         </div>
 
     </main>
     <div class="logo_cinza">
-        <img src="./images/XTECH.png" title="Xtech" />
+        <img src="/images/XTECH.png" title="Xtech" />
     </div>
     <footer>
         <div class="barraRodape">
