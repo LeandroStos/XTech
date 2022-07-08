@@ -713,6 +713,7 @@ margin-top: 8px;
     height: 150px;
     margin: 2px auto;
     width: 80vw;
+    
 }
 
 .email{
@@ -722,6 +723,7 @@ margin-top: 8px;
     height: 60px; 
     width: 430px;
     justify-content: center;
+   
     
 }
 .password {
@@ -747,6 +749,7 @@ margin-top: 8px;
     outline: none;
     width: 390px;
     color: white;
+
 }
 
 .email img{
