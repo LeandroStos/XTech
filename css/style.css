@@ -161,12 +161,17 @@ main {
 .center {
     /* display: flex;
     width: 100vw; */
-    height: 75vh;
+    height: 77vh;
     flex-direction: row;
     padding: 15vh 0 0 0;
     justify-content: center;
     align-items: center;
   
+}
+
+.box-container button{
+    background-color: rgba(68, 213, 197, 15%);
+    border-radius: var(--border-radius-default);
 }
 
 .center h1 {
@@ -186,9 +191,17 @@ main {
 .box-container {
     background-color: rgba(68, 213, 197, 15%);
     border-radius: var(--border-radius-default);
+    min-width: 330px;
     margin-left: 30vw;
     padding: 2vh;
     width: 40vw;
+}
+
+.box-container button{
+    background-color: rgba(73, 236, 217, 0.00);
+    border-radius: var(--border-radius-default);
+    border: 0;
+    cursor: pointer;
 }
 
 .icone {
@@ -268,7 +281,11 @@ footer {
     height: 25px;
     outline: none;
     width: 300px;
-    margin-top: 20px;
+    margin-top: 10px;
+}
+.informacoes {
+    display: flex;
+    justify-content: center;
 }
 
 .button-01 {
@@ -282,7 +299,7 @@ footer {
     width: 209px;
 }
 
-button:hover {
+.button-01,#submit,.button-2:hover {
     background-color: var(--color-primary);
     color: var(--color-dark);
 }
@@ -516,21 +533,24 @@ margin-top: 8px;
      width: 100%;
      letter-spacing: 2px;
      
+     
    }
 
    .inputUser{
     color: white;
-    padding: 05px;
-    margin-bottom: auto;
+    
+   
   }
 
-   .label_input{
+   .label_input {
     /* position: absolute;    =>  Distancia ou aproxima a label da linha de input */
      top: 0px;
      left:0px;
      pointer-events: none;
      transition: .5px;
-     color:white         
+     color:white;
+     
+             
    } 
    /* .inputUser_T:focus ~ .label_input,
    .inputUser_T:valid{
@@ -565,7 +585,8 @@ margin-top: 8px;
    .inputBox{
      position: relative;
      margin-left: 30px;
-     margin-left: 30px;
+   
+     
    }
    
 
@@ -650,19 +671,29 @@ margin-top: 8px;
     height: 63.5vh;
     margin: 90px 5vw 10px 1vw;
     width: 100vw;
+    display: flex ;
+    justify-content: center;
+    
     /* margin-top: 30px; */
 }
+/* .center {
+    justify-content: center;
+    display: flex;
+} */
 .linguagens {
     margin-left: 30px;
     color: white;
     padding: 4px;
     background: none;
     border-color: white;
+   
 
     }
 .seletor {
     background-color: none;
-    color: #101527;
+    color: white;
+    background: nonec;
+
 }
 
 .fraseCadastro{
@@ -683,6 +714,7 @@ margin-top: 8px;
     height: 150px;
     margin: 2px auto;
     width: 80vw;
+    
 }
 
 .email{
@@ -691,6 +723,20 @@ margin-top: 8px;
     border-radius: 25px;
     height: 60px; 
     width: 430px;
+    justify-content: center;
+   
+    
+}
+.password {
+    background-color: rgba(73, 236, 217, 0.15);
+    border: none;
+    border-radius: 25px;
+    height: 60px; 
+    width: 430px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+       
     
 }
 
@@ -704,6 +750,7 @@ margin-top: 8px;
     outline: none;
     width: 390px;
     color: white;
+
 }
 
 .email img{
@@ -796,7 +843,6 @@ margin-top: 8px;
  .dicas_xtech h5 {
     color: white;
     margin-left: 50px;
-<<<<<<< HEAD
     margin-top: 100px;
     
  }
@@ -849,7 +895,7 @@ margin-top: 8px;
  .Fique_por_Dentro {
   color: white;
   margin-left: 30px;
- =======
+ }
  
  /*Parte do menu mobile */
  
@@ -949,143 +995,4 @@ margin-top: 8px;
          font-size: 20px;
          padding-left: 6px;
      }
-=======
-    margin-top: 15px;  
 }
-.Imagem_carreira li a {
-    margin-left: 30px;
-  
-}
-.tips_item-link{
-    margin-left: 30px;
-}
-
-
-.center_logado h1 {
-    color: var(--color-lighter);
-    font-size: var(--font-size-xxl);
-    margin-bottom:40px;
-    font-size: 2.3em;
-    text-align: center;
-    bottom: 100px;
-  
-}
-.button_empresas  .button_parceiros {
-    color: var(--white);
-    font-weight: 500;
-    line-height: 1;
-    text-align: center;
-    text-decoration: none;
-    background-color: var(--secondary);
-    border: 1px solid var(--secondary);
-    border-radius: 2px;
-    cursor: pointer;
-}
-.button_empresas {
-    padding: 1.5rem 1.125rem;
-    font-size: 1rem;
-}
-.Fique_por_Dentro {
- color: white;
- margin-left: 30px;
-
-/*Parte do menu mobile */
-
-.menuMobile{
-    display: none;
-    height: 40px;
-    width: 40px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-right: 20px;
-}
-
-.mmLine{
-    height: 3px;
-    background-color: #fff;
-}
-
-/*------------------------*/
-
-
-/* configurações para respansividade */
-
-@media(min-width: 450px) and (max-width: 750px) {
-
-    .menuEsquerda, .menuDireita {
-        display: none;
-    }
-
-    .menuMobile{
-        display: flex;
-        margin-left: 85%;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
-    .titulo {
-        height: 140px;
-        text-align: center;
-    }
-
-    .center h1 {
-        font-size: 2.0em;
-    }
-
-    .box-container {
-        padding: 1.5vh;
-    }
-
-    .icone {
-        font-size: 20px;
-        padding-left: 6px;
-    }
-}
-
-
-@media (max-width: 450px) {
-
-    header .cabecalho img {
-        width: 100px;
-    }
-
-    .menuEsquerda, .menuDireita {
-        display: none;
-    }
-
-    .menuMobile{
-        display: flex;
-        margin-left: 78%;
-        flex-direction: column;
-        justify-content: space-around;
-        height: 30px;
-        width: 30px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        margin-right: 10px
-    }
-
-    .mmLine{
-        height: 2px;
-    }
-     
-    .titulo {
-        height: 95px;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    .center h1 {
-        font-size: 1.5em;
-    }
-
-    .box-container {
-        padding: 1.3vh;
-    }
-
-    .icone {
-        font-size: 20px;
-        padding-left: 6px;
-    }
-}
->>>>>>> 996736b546ec4139a3ad668e4bc14667ca360d11
