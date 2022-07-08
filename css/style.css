@@ -280,7 +280,11 @@ footer {
     height: 25px;
     outline: none;
     width: 300px;
-    margin-top: 20px;
+    margin-top: 10px;
+}
+.informacoes {
+    display: flex;
+    justify-content: center;
 }
 
 .button-01 {
@@ -528,21 +532,24 @@ margin-top: 8px;
      width: 100%;
      letter-spacing: 2px;
      
+     
    }
 
    .inputUser{
     color: white;
-    padding: 05px;
-    margin-bottom: auto;
+    
+   
   }
 
-   .label_input{
+   .label_input {
     /* position: absolute;    =>  Distancia ou aproxima a label da linha de input */
      top: 0px;
      left:0px;
      pointer-events: none;
      transition: .5px;
-     color:white         
+     color:white;
+     
+             
    } 
    /* .inputUser_T:focus ~ .label_input,
    .inputUser_T:valid{
@@ -577,7 +584,8 @@ margin-top: 8px;
    .inputBox{
      position: relative;
      margin-left: 30px;
-     margin-left: 30px;
+   
+     
    }
    
 
@@ -662,19 +670,29 @@ margin-top: 8px;
     height: 63.5vh;
     margin: 90px 5vw 10px 1vw;
     width: 100vw;
+    display: flex ;
+    justify-content: center;
+    
     /* margin-top: 30px; */
 }
+/* .center {
+    justify-content: center;
+    display: flex;
+} */
 .linguagens {
     margin-left: 30px;
     color: white;
     padding: 4px;
     background: none;
     border-color: white;
+   
 
     }
 .seletor {
     background-color: none;
-    color: #101527;
+    color: white;
+    background: nonec;
+
 }
 
 .fraseCadastro{
@@ -703,6 +721,19 @@ margin-top: 8px;
     border-radius: 25px;
     height: 60px; 
     width: 430px;
+    justify-content: center;
+    
+}
+.password {
+    background-color: rgba(73, 236, 217, 0.15);
+    border: none;
+    border-radius: 25px;
+    height: 60px; 
+    width: 430px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+       
     
 }
 
@@ -798,8 +829,6 @@ margin-top: 8px;
 }
 
 /*Final configuração página cadastro*/
-<<<<<<< HEAD
-=======
 /* estilização da area logada*/
 
 .center h3 {
@@ -963,4 +992,3 @@ margin-top: 8px;
          padding-left: 6px;
      }
 }
->>>>>>> 0c84b957f2c9570f23f4beb34f55cc4d4b79fa9b
