@@ -518,7 +518,7 @@ margin-top: 8px;
 
   }
   
-  legend {
+  .legend {
     justify-content: center;
     align-items: center;
    }
@@ -528,16 +528,19 @@ margin-top: 8px;
      border: none;
      border-bottom: 1px solid white;
      outline: none;
-     color: white;
+     color:white;
      font-size: 16px;
      width: 100%;
      letter-spacing: 2px;
+    
+    
      
      
    }
 
    .inputUser{
-    color: white;
+    color:white;
+    background: none;
     
    
   }
@@ -548,7 +551,7 @@ margin-top: 8px;
      left:0px;
      pointer-events: none;
      transition: .5px;
-     color:white;
+     color:none;
      
              
    } 
@@ -585,10 +588,27 @@ margin-top: 8px;
    .inputBox{
      position: relative;
      margin-left: 30px;
+     padding: 10px;
+     background: none;
    
-     
    }
-   
+
+   .inputpassword {
+    position: relative;
+    margin-left: 30px;
+    margin-top: 15px;
+    color: #00DEBD;
+    border-radius: 25px;
+    background: none;
+    padding: 15px;
+
+   }
+   .inputsenha {
+    background: #101527;
+    position: relative;
+    padding: 60px;
+
+   }
 
  .radio{
  color: white;
@@ -642,6 +662,7 @@ margin-top: 8px;
 .btn-center{
     display: flex;
     justify-content: center;
+    margin-bottom: 15px;
 
 }
 
