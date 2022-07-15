@@ -533,9 +533,6 @@ margin-top: 8px;
      width: 100%;
      letter-spacing: 2px;
     
-    
-     
-     
    }
 
    .inputUser{
@@ -606,8 +603,9 @@ margin-top: 8px;
    .inputsenha {
     background: #101527;
     position: relative;
-    padding: 60px;
-
+    padding: 10px;
+    color: #00DEBD;
+    border-radius: 25px;
    }
 
  .radio{
