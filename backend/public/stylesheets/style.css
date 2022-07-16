@@ -361,7 +361,12 @@ label.checkbox{
     align-items: center;
 }
 
-.button-01,#button2:hover {
+.button-01:hover {
+    background-color: var(--color-primary);
+    color: var(--color-dark);
+}
+
+#button2:hover {
     background-color: var(--color-primary);
     color: var(--color-dark);
 }
