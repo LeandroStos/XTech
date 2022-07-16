@@ -129,10 +129,26 @@ header .menu {
     width: 100vw;
 }
 
-li {
+.menuEsquerda ul li {
     display: inline-block;
     list-style: none;
-    margin-left: 32px;
+    margin-left: 1vw;
+}
+
+.menuDireita ul li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 2vw;
+}
+
+[title="Entrar"]{
+    margin-right: 3vw;
+}
+
+.menuDireitoAcesso ul li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 10px;
 }
 
 /*Ajustar a cor do link a*/
