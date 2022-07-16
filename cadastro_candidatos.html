@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+                integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+                crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="backend/public/stylesheets/style.css" type="text/css">
+        <link rel="icon" type="image/png" sizes="50x50" href="images/favicon.png">
+        <title>XTech | O seu primeiro passo na programação!</title>
+</head>
+
+
+<body>
+
+        <header>
+                <div class="menu-2">
+                        <div class="imagemX">
+                                <img src="backend/public/images/logo_vertical.png" title="Xtech" />
+                        </div>
+                        <!--imagemX-->
+                        <div class="menuEsquerdaAcesso">
+                                <ul>
+                                        <li><a href="index.html" title="Entrar">Home page</a></li>
+                                        <li><a href="politica.html" title="Cadastre-se">Politica de privacidade</a>
+                                        </li>
+                                </ul>
+                        </div>
+                </div>
+                <!--menu-->
+
+        </header>
+
+
+        <main>
+                <div class="box_formulario">
+                        <form action="">
+                                <fieldset>
+                                        <div class="center_Candidatos">
+                                                <h1>Formulario Cadastro de Candidatos</h1>
+                                        </div>
+                                        <br>
+                                        <div class="inputBox">
+                                                <input type="text" name="label_input" id = "nome" class="inputUser_T" required />
+                                                <label for="nome" class="label_input">Nome completo</label>
+                                                
+                                        </div>
+                                        <br></br>
+
+                                        <div class="inputBox">
+                                        <input type="text" name="email"class="inputUser_T" required>
+                                        <label for="email" class="label_input">Email</label>
+                                        
+                                        </div>
+                                        <br></br>
+
+
+                                        <p class="sexo"><b>Sexo:</b></p>
+                                        <br>
+                                        <input type="radio" id="feminino" name="genero" value="feminino" required />
+
+                                        <label for="feminino" class="radio">Feminino</label>
+                                        <input type="radio" id="masculino" name="genero" value="masculino" required />
+
+                                        <label for="masculino" class="radio">Masculino</label>
+                                
+                                        <br></br>
+
+                                        <br></br>
+                                        <p class="Habilidades"><b>Habilidades:</b></p>
+                                        <br>
+                                        <input type="radio" id="Front-end" name="Segmento" value="Front" required />
+
+                                        <label for="Front-end" class="radio">Front-end</label>
+                                        <input type="radio" id="Beck-end" name="Segmento" value="Beck-end" required />
+
+                                        <label for="Beck-end" class="radio">Beck-end</label>
+                                        <input type="radio" id="Full-Stack" name="Segmento" value="Full-Stack" required />
+
+                                        <label for="Full-Stack" class="radio">Full-Stack</label>
+
+                                        <br></br>
+
+                                        <br></br>
+                                        <p class="sexo"><b>Linguagens que domina:</b></p>
+                                        <br>
+                                        <title><b>linguagens</b></title>    
+                                        <form action="">
+                                        <div class="Seletor" >
+                                                <select class="linguagens" name="list">
+
+                                                <option value="C++">C++</option>
+                                                <option value="Css">Css</option>
+                                                <option value="HTML">HTML</option>
+                                                <option value="JavaScript">JavaScript</option>
+                                                <option value="Java">Java</option>
+                                                <option value="Python">Python</option>
+                                                <option value="typescript">typescript</option>
+                                                <option value="GO">GO</option>
+                                                <option value="Ruby">Ruby</option>
+
+                                                </select>
+                                        </div>
+
+                                        <br></br>
+
+
+                                        </form>
+
+                                        <div class="inputBox">
+                                                <label for="data_nascimento" class="date"><b>Data de Nascimento:</b></label>
+                                                <input type="date" name="data_nascimento" id="data_nascimento"
+                                                        class="inputDate" />
+
+
+                                        </div>
+                                        <br></br>
+                                        <div class="inputBox">
+                                                <input type="text" name="endereco" id="endereco" class="inputUser_T"  required />
+                                                <label for="endereco" class="label_input">Endereço</label>
+                                                
+                                                <br></br>
+
+                                        </div>
+                                        <br></br>
+                                        <div class="inputBox">
+                                                <input type="text" name="cidade" id="cidade" class="inputUser_T" required />
+                                                <label for="cidade" class="label_input">Cidade</label>
+                                        </div>
+                                        <br></br>
+                                        <div class="inputBox">
+                                                <input type="text" name="estado" id="estado" class="inputUser_T" required />
+                                                <label for="estado" class="label_input">Estado</label>
+                                        </div>
+                                        <br></br>
+                                        <div class="btn-center">
+                                                <!-- <input type="submit" name="submit" id="submit" class="submit"/> -->
+                                                <button type="submit" name="submit" id="submit" class="submit"
+                                                        value="Submit">CADASTRAR</button>
+                                         </div>
+
+
+
+
+                                </fieldset>
+                        </form>
+
+
+
+                </div>
+
+        </main>
+
+
+        <div class="logo_cinza">
+                <img src="backend/public/images/XTECH.png" title="Xtech" />
+        </div>
+
+
+
+        <footer>
+                <div class="barraRodape">
+                        <div class="img-1"><i class="fa-brands fa-facebook-square"></i></div>
+                        <div class="img-2"><i class="fa-brands fa-linkedin"></i></div>
+                        <div class="img-3"><i class="fa-brands fa-instagram-square"></i></div>
+                </div>
+                <!--barraRodape-->
+        </footer>
+
+</body>
+
+</html>
