@@ -788,6 +788,7 @@ margin-top: 8px;
     color: white;
 }
 
+
 .senha img{
     margin-top: 12px;
     margin-left: 8px;
@@ -995,3 +996,29 @@ margin-top: 8px;
          padding-left: 6px;
      }
 }
+ /* =========== Botão de insert Senha da tela de Cadastro.*/
+.inputpassword {
+    margin-top: 30px;
+    
+    background:none;
+    border-radius: 25px;
+    display: flex;
+    border: none;
+    color: #00DEBD;
+    
+        
+}
+
+.digitesenha {
+    background: #101527;
+    margin-left: 30px;
+    color: #00DEBD;
+    border-radius: 8px;
+    padding: 8px;
+}
+.labelSenha {
+    color: #00DEBD;
+    margin-left: 10px;
+    padding: 8px;
+}
+/* ==================================*/
