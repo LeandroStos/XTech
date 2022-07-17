@@ -128,7 +128,7 @@ header .menu {
     justify-content: space-around;
     width: 100vw;
 }
-
+/* mudanças feitas */
 .menuEsquerda ul li {
     display: inline-block;
     list-style: none;
@@ -150,6 +150,8 @@ header .menu {
     list-style: none;
     margin-left: 10px;
 }
+
+/* termina aqui mudanças feitas */
 
 /*Ajustar a cor do link a*/
 a:hover {
@@ -361,12 +363,7 @@ label.checkbox{
     align-items: center;
 }
 
-.button-01:hover {
-    background-color: var(--color-primary);
-    color: var(--color-dark);
-}
-
-#button2:hover {
+.button-01,#button2:hover {
     background-color: var(--color-primary);
     color: var(--color-dark);
 }
@@ -651,7 +648,22 @@ margin-top: 8px;
      margin-left: 30px;
      margin-left: 30px;
    }
-   
+
+   .input-senha{
+     margin-top: 20px;
+     margin-bottom: 20px;
+     background-color: #101527;
+     border-radius: 50px;
+     color: #fff;
+     font-size: 16px;
+     padding-left: 15px;
+     height: 25px;
+     border: solid #fff 2px;
+   }
+
+   .input-senha2{
+    color: #fff;
+   }
 
  .radio{
  color: white;
@@ -680,9 +692,7 @@ margin-top: 8px;
   {
      color: #101527;
      background-color: none;
-     font-size: medium;
-
-     
+     font-size: medium;   
  }
  .inputcep,
  .inputDoc{
@@ -705,7 +715,7 @@ margin-top: 8px;
 .btn-center{
     display: flex;
     justify-content: center;
-
+    margin-top: 30px;
 }
 
  .logo_cinza{
@@ -949,6 +959,138 @@ margin-top: 8px;
   color: white;
   margin-left: 30px;
  }
+
+/* configuração página de candidato */
+button.lupaPesquisa {
+    background: #fff;
+    cursor: pointer;
+    width: 20px;
+    color: var(--color-darker);
+    height: 20px;
+    border: 0;
+}
+
+.pesquisa {
+    border: none;
+    background-color:#fff;       
+    outline: none;
+    color: var(--color-darker);   
+    padding-left: 1vh;
+    position: fixed;
+    height: 20px;
+    min-width: 150px;
+    width: 13vw;
+}   
+
+.opcoes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: var(--color-secondary);
+    height: 48px;
+}
+
+.opcoes ul {
+list-style: none;
+}
+
+.opcoes ul li{
+display: inline-block;
+margin-left: 40px;
+cursor: pointer;
+}
+
+.opcoes ul a{
+text-decoration: none;
+color: #fff;    
+}
+
+.opcoes a:hover{
+color: var(--color-darker)   ;
+}  
+
+.wrapper{
+    width: 80vw;
+    height: 70vh;
+    display: flex;
+    box-shadow: 0 1px 20px 0 rgba(69,90,100,.08);
+  }
+
+  .wrapper .left{
+    width: 35%;
+    background: linear-gradient(to right,#01a9ac,#01dbdf);
+    padding: 40px 25px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .wrapper .left img{
+    border-radius: 5px;
+    flex-direction: row;
+    margin-bottom: 10px;
+  }
+  
+  .wrapper .left h4{
+    margin-bottom: 10px;
+  }
+  
+  .wrapper .left p{
+    font-size: 12px;
+  }
+  
+  .wrapper .right{
+    width: 65%;
+    background: #101527;
+    padding: 30px 25px;
+    color: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .wrapper .right .info,
+  .wrapper .right .projects{
+    margin-bottom: 25px;
+  }
+  
+  .wrapper .right .info h3,
+  .wrapper .right .projects h3{
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+  
+  .wrapper .right .info_data,
+  .wrapper .right .projects_data{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .wrapper .right .info_data .data,
+  .wrapper .right .projects_data .data{
+    width: 45%;
+  }
+  
+  .wrapper .right .info_data .data h4,
+  .wrapper .right .projects_data .data h4{
+      color: #fff;
+      margin-bottom: 5px;
+  }
+  
+  .wrapper .right .info_data .data p,
+  .wrapper .right .projects_data .data p{
+    font-size: 13px;
+    color: #fff;
+    margin-bottom: 10px;
+    color: #919aa3;
+  }
+
+/* Fim da configuração página de candidato */
  
  /*Parte do menu mobile */
  
