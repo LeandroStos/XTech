@@ -280,7 +280,11 @@ footer {
     height: 25px;
     outline: none;
     width: 300px;
-    margin-top: 20px;
+    margin-top: 10px;
+}
+.informacoes {
+    display: flex;
+    justify-content: center;
 }
 
 .button-01 {
@@ -297,6 +301,7 @@ footer {
 .button-01,#submit,.button-2:hover {
     background-color: var(--color-primary);
     color: var(--color-dark);
+    margin-bottom: 30px;
 }
 
 /*Fim dos estilos página acesso */
@@ -666,8 +671,15 @@ margin-top: 8px;
     height: 63.5vh;
     margin: 90px 5vw 10px 1vw;
     width: 100vw;
+    display: flex ;
+    justify-content: center;
+    
     /* margin-top: 30px; */
 }
+/* .center {
+    justify-content: center;
+    display: flex;
+} */
 .linguagens {
     margin-left: 30px;
     color: white;
@@ -680,7 +692,11 @@ margin-top: 8px;
 .seletor {
     background-color: none;
     color: white;
+<<<<<<< HEAD
     background: none;
+=======
+    background: nonec;
+>>>>>>> 95742101eee6e84d6a6eded1b19ebe6e3b3a4558
 
 }
 
@@ -702,6 +718,7 @@ margin-top: 8px;
     height: 150px;
     margin: 2px auto;
     width: 80vw;
+    
 }
 
 .email{
@@ -710,6 +727,20 @@ margin-top: 8px;
     border-radius: 25px;
     height: 60px; 
     width: 430px;
+    justify-content: center;
+   
+    
+}
+.password {
+    background-color: rgba(73, 236, 217, 0.15);
+    border: none;
+    border-radius: 25px;
+    height: 60px; 
+    width: 430px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+       
     
 }
 
@@ -723,6 +754,7 @@ margin-top: 8px;
     outline: none;
     width: 390px;
     color: white;
+
 }
 
 .email img{
@@ -760,6 +792,7 @@ margin-top: 8px;
     width: 390px;
     color: white;
 }
+
 
 .senha img{
     margin-top: 12px;
@@ -805,8 +838,6 @@ margin-top: 8px;
 }
 
 /*Final configuração página cadastro*/
-<<<<<<< HEAD
-=======
 /* estilização da area logada*/
 
 .center h3 {
@@ -970,4 +1001,29 @@ margin-top: 8px;
          padding-left: 6px;
      }
 }
->>>>>>> 0c84b957f2c9570f23f4beb34f55cc4d4b79fa9b
+ /* =========== Botão de insert Senha da tela de Cadastro.*/
+.inputpassword {
+    margin-top: 30px;
+    
+    background:none;
+    border-radius: 25px;
+    display: flex;
+    border: none;
+    color: #00DEBD;
+    
+        
+}
+
+.digitesenha {
+    background: #101527;
+    margin-left: 30px;
+    color: #00DEBD;
+    border-radius: 8px;
+    padding: 8px;
+}
+.labelSenha {
+    color: #00DEBD;
+    margin-left: 10px;
+    padding: 8px;
+}
+/* ==================================*/

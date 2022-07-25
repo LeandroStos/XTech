@@ -39,14 +39,14 @@
 
         <main>
                 <div class="box_formulario">
-                        <form action="">
+                        <form action="/candidados" method="post">
                                 <fieldset>
                                         <div class="center_Candidatos">
                                                 <h1>Formulario Cadastro de Candidatos</h1>
                                         </div>
                                         <br>
                                         <div class="inputBox">
-                                                <input type="text" name="label_input" id = "nome" class="inputUser_T" required />
+                                                <input type="text" name="name_input" id = "nome" class="inputUser_T" required />
                                                 <label for="nome" class="label_input">Nome completo</label>
                                                 
                                         </div>
@@ -136,6 +136,11 @@
                                         <div class="inputBox">
                                                 <input type="text" name="estado" id="estado" class="inputUser_T" required />
                                                 <label for="estado" class="label_input">Estado</label>
+                                        </div>
+                                        <div class="inputpassword">
+                                                <input type="input" name="senha" id="senha" class="digitesenha" required>
+                                                <label for="CNPJ" class="labelSenha"><b>Digite sua Senha</b></label>
+
                                         </div>
                                         <br></br>
                                         <div class="btn-center">
