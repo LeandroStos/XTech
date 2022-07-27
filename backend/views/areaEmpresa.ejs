@@ -1,0 +1,53 @@
+<%- include('./partials/head'); %>
+
+<%- include('./partials/headerEmpresa'); %>
+  
+    <div class="center">
+      <div class="wrapper">
+        <div class="left">
+            <h2>Olá</h2>
+            <p><%= empresaLogado.nome %></p>
+            <img src="https://portal1.iff.edu.br/desenvolvimento-institucional/imagens/avatar.jpg/@@images/image.jpeg" alt="user" width="100">
+        </div>
+        <div class="right">
+            <div class="info">
+                <h3>Informações</h3>
+                <div class="info_data">
+                     <div class="data">
+                        <h4>Email</h4>
+                        <p><%= empresaLogado.email %></p>
+                        <h4>Celular</h4>
+                        <p>XXXXXXX</p>
+                     </div>
+                     <div class="data">
+                       <h4>Endereço</h4>
+                        <p><%= empresaLogado.endereco %></p>
+                        <p><%= empresaLogado.cidade %></p>
+                        <p><%= empresaLogado.estado %></p>
+                  </div>
+                </div>
+            </div>
+          
+          <div class="projects">
+                <h3>Resumo</h3>
+                <div class="projects_data">
+                     <div class="data">
+                        <h4>Receita</h4>
+                        <p>xxxxxxxx</p>
+                     </div>
+                     <br>
+                     <div class="data">
+                       <h4>Número de colaboradores</h4>
+                        <p>XXXXXXXXXXX</p>
+                     </div>
+                     <div class="data">
+                      <h4>Setor</h4>
+                       <p>XXXXXXXXXXX</p>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+<%- include('./partials/footer'); %>

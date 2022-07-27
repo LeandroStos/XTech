@@ -1,0 +1,61 @@
+<%- include('./partials/head'); %>
+
+<%- include('./partials/headerCandidato'); %>
+  
+    <div class="center">
+      <div class="wrapper">
+        <div class="left">
+            <h2>Olá</h2>
+            <p><%= candidatoLogado.name %></p>
+            <img src="https://portal1.iff.edu.br/desenvolvimento-institucional/imagens/avatar.jpg/@@images/image.jpeg" alt="user" width="100">
+        </div>
+        <div class="right">
+            <div class="info">
+                <h3>Informações</h3>
+                <div class="info_data">
+                     <div class="data">
+                        <h4>Email</h4>
+                        <p><%= candidatoLogado.email %></p>
+                        <h4>Celular</h4>
+                        <p>XXXXXXX</p>
+                     </div>
+                     <div class="data">
+                       <h4>Endereço</h4>
+                        <p><%=candidatoLogado.endereco %></p>
+                        <p>Cidade: <%=candidatoLogado.cidade %></p>   
+                        <p>Estado: <%=candidatoLogado.estado %></p>
+                  </div>
+                </div>
+            </div>
+          
+          <div class="projects">
+                <h3>Habilidades</h3>
+                <div class="projects_data">
+                     <div class="data">
+                        <h4>Linguagens</h4>
+                        <p><%=candidatoLogado.list %></p>
+                     </div>
+                     <div class="data">
+                       <h4>GitHub</h4>
+                        <p>XXXXXXXXXXX</p>
+                     </div>  
+                </div>
+            </div>
+            <div class="projects">
+              <h3>Experiência</h3>
+              <div class="projects_data">
+                   <div class="data">
+                      <h4>Recente</h4>
+                      <p>XXXXXXXXXXX</p>
+                   </div>
+                   <div class="data">
+                     <h4>Periodo</h4>
+                      <p>XXXXXXXXXXX</p>
+                   </div>  
+              </div>
+          </div>
+        </div>
+    </div>
+    </div>
+
+<%- include('./partials/footer'); %>

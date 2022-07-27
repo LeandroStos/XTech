@@ -1,19 +1,30 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+const createError = require('http-errors');
+const express = require('express');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
+const session = require('express-session');
+const cookies = require('cookie-parser');
+const candidatoDataMiddleware = require('./middleware/candidatoDataMiddleware');
+const empresaDataMiddleware = require('./middleware/empresaDataMiddleware');
 
-// var indexRouter = require('./routes/index');
+// const indexRouter = require('./routes/index');
 const mainRouter = require('./routes/main');
-const acessoRouter = require('./routes/acesso');
-const formCandidatoRouter = require('./routes/formCandidato');
-const formEmpresaRouter = require('./routes/formEmpresa');
-const sobreRouter = require('./routes/sobre');
-const politicasRouter = require('./routes/politicas');
-var usersRouter = require('./routes/users');
+const candidatosRouter = require('./routes/candidatos');
+const empresasRouter = require('./routes/empresas');
 
-var app = express();
+const app = express();
+
+app.use(session({
+  secret: "Shhh, Muito secreto!",
+  resave: false,
+  saveUninitialized: false,
+}));
+
+app.use(cookies())
+
+app.use(candidatoDataMiddleware);
+app.use(empresaDataMiddleware);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -27,12 +38,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // app.use('/', indexRouter);
 app.use('/', mainRouter);
-app.use('/acesso', acessoRouter);
-app.use('/formCandidato', formCandidatoRouter);
-app.use('/formEmpresa', formEmpresaRouter);
-app.use('/sobre', sobreRouter);
-app.use('/politicas', politicasRouter);
-app.use('/users', usersRouter);
+app.use('/candidatos', candidatosRouter);
+app.use('/empresas', empresasRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

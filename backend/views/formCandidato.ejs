@@ -4,14 +4,14 @@
 
 <main>
         <div class="box_formulario">
-                <form action="">
+                <form action="/candidatos/registro" method="POST">
                         <fieldset>
                                 <div class="center_Candidatos">
                                         <h1>Formulario Cadastro de Candidatos</h1>
                                 </div>
                                 <br>
                                 <div class="inputBox">
-                                        <input type="text" name="label_input" id = "nome" class="inputUser_T" required />
+                                        <input type="text" name="name" id = "name" class="inputUser_T" required />
                                         <label for="nome" class="label_input">Nome completo</label>
                                         
                                 </div>
@@ -102,18 +102,20 @@
                                         <input type="text" name="estado" id="estado" class="inputUser_T" required />
                                         <label for="estado" class="label_input">Estado</label>
                                 </div>
-
+                                <br></br>
                                 <div class="inputBox">
                                         <label for="senha" class="input-senha2">Senha</label>
-                                        <input type="password" name="estado" id="estado" class="input-senha" required />
+                                        <input type="password" name="password" id="password" class="input-senha" required />
                                 </div>
 
+                                <div class="btn-center">
+                                        <!-- <input type="submit" name="submit" id="submit" class="submit"/> -->
+                                        <button type="submit" name="submit" id="submit" class="submit"
+                                                value="Submit">CADASTRAR</button>
+                                 </div>
+
                         </fieldset>
-                        <div class="btn-center">
-                                <!-- <input type="submit" name="submit" id="submit" class="submit"/> -->
-                                <button type="submit" name="submit" id="submit" class="submit"
-                                        value="Submit">CADASTRAR</button>
-                         </div>
+
                 </form>
 
 

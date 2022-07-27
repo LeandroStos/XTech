@@ -1,0 +1,38 @@
+<%- include('./partials/head'); %>
+
+<%- include('./partials/headerAcesso'); %>
+
+<main>
+    <div class="center center-2">
+        <h1>Acesse a sua conta</h1>
+        <div class="box-container-acesso">
+            <form action="/candidatos/acessoCandidato" method="POST">
+                <% if(locals.errors && errors.email) { %>
+                    <p style="color:red" text-align="center"><%= errors.email.message %></p>
+                <% } %>
+                <div class="box1">
+                    <img src="/images/Pesquisa.png" height="25px" width="25px">
+                    <input type="email" name="email" class="email-01" value="" placeholder=" Digite seu Email" required>
+                </div>
+                <div class="box1">
+                    <img src="/images/Pesquisa.png" height="25px" width="25px">
+                    <input type="password" name="password" class="senha-01" value="" placeholder="Digite sua senha" required>
+                </div>
+
+                <button class="button-01" type="submit" value="Enviar">Acessar</button>    
+
+                <div class="lembrar">
+                    <label>Lembrar usuário</label>
+                    <input type="checkbox" name="remember_candidato">
+                </div>
+            </form>
+        </div>
+    </div>
+
+</main>
+
+<div class="logo_cinza">
+    <img src="/images/XTECH.png" title="Xtech" />
+</div>
+
+<%- include('./partials/footer'); %>    

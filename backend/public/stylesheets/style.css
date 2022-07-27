@@ -386,12 +386,19 @@ label.checkbox{
     justify-content: center;
     /*overflow-y: scroll; /* Verificar o comportamento do Scroll*/
 }
-.esqueceu {
-display: flex;
-margin-left: 200px;
-font-size: 16px;
-margin-top: 8px;
 
+.lembrar {
+    display: flex;
+    justify-content: center;
+    margin-left: 15vw;
+    font-size: 16px;
+    margin-top: 8px;
+    
+}
+.lembrar label{
+    color: #fff;
+    margin-right: 5px;
+    font-weight: bold;
 }
 .esqueceu a:hover{
     color: var(--color-primary);
@@ -575,6 +582,9 @@ margin-top: 8px;
 .box_formulario {
     border-radius: 15px;
     padding: 15px;
+    height: calc(100vh - 162px);
+    overflow-y: scroll;
+
     /* position: absolute; */
     /* top: 50%;
     left: 50%;
@@ -646,23 +656,21 @@ margin-top: 8px;
    .inputBox{
      position: relative;
      margin-left: 30px;
-     margin-left: 30px;
+     margin-right: 30px;
    }
 
    .input-senha{
-     margin-top: 20px;
-     margin-bottom: 20px;
+     margin-left: 10px;
      background-color: #101527;
-     border-radius: 50px;
-     color: #fff;
-     font-size: 16px;
-     padding-left: 15px;
-     height: 25px;
-     border: solid #fff 2px;
+     border-radius: 25px;
+     margin-top: 1.5%;
+     border: #01a9ac solid 2px;
    }
 
    .input-senha2{
     color: #fff;
+    font-size: 0.8rem;
+    color: #18ffff;
    }
 
  .radio{
@@ -710,7 +718,6 @@ margin-top: 8px;
     background:aqua;
     border-radius: 15px;
     cursor: pointer;
-        
  }
 .btn-center{
     display: flex;
@@ -843,7 +850,7 @@ margin-top: 8px;
     margin-right: 5px;
 }
 
-#email,#password{
+.senhaDefinicao,.emailDefinicao{
     border: none;
     background: none;
     outline: none;
@@ -1030,15 +1037,15 @@ color: var(--color-darker)   ;
   .wrapper .left img{
     border-radius: 5px;
     flex-direction: row;
-    margin-bottom: 10px;
+    margin-top: 10px;
   }
   
-  .wrapper .left h4{
+  .wrapper .left h2{
     margin-bottom: 10px;
   }
   
   .wrapper .left p{
-    font-size: 12px;
+    font-size: 20px;
   }
   
   .wrapper .right{
@@ -1091,7 +1098,44 @@ color: var(--color-darker)   ;
   }
 
 /* Fim da configuração página de candidato */
- 
+
+/* Inicio configuração página opção acesso */
+
+.botaoOpcoes {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+.botaoCandidato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00DEBD;
+    margin-right: 30px;
+    width: 10vw;
+    height: 5vh;
+    border-radius: 50px;
+    text-align: center;
+    min-width: 150px;
+    min-height: 50px;
+}
+
+.botaoEmpresa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00DEBD;
+    border-radius: 50px;
+    margin-right: 30px;
+    width: 10vw;
+    height: 5vh;
+    min-width: 150px;
+    min-height: 50px;
+}
+
+/* Inicio configuração página opção acesso */
+
  /*Parte do menu mobile */
  
  .menuMobile{
@@ -1102,11 +1146,37 @@ color: var(--color-darker)   ;
      margin-bottom: 40px;
      margin-right: 20px;
  }
+
+ .menuMobile-2{
+    display: none;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
  
  .mmLine{
      height: 3px;
      background-color: #fff;
  }
+
+ .mmLine-2{
+    height: 3px;
+    background-color: #fff;
+}
+
+.menuAtivar {
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    width: 100vw;
+    background-color: var(--color-primary);
+    margin-top: 158px;
+}
  
  /*------------------------*/
  
@@ -1115,8 +1185,8 @@ color: var(--color-darker)   ;
  
  @media(min-width: 450px) and (max-width: 750px) {
  
-     .menuEsquerda, .menuDireita {
-         display: none;
+     .menuEsquerda, .menuDireita, .menuDireitoAcesso {
+        display: none;
      }
  
      .menuMobile{
@@ -1125,9 +1195,45 @@ color: var(--color-darker)   ;
          flex-direction: column;
          justify-content: space-around;
      }
+
+     .menuMobile-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .menuAtivar {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100vw;
+        text-align: center;
+        background: linear-gradient(269.83deg, var(--color-primary) 8.79%, var(--color-secondary) 65.48%);
+        opacity: 100%;
+        height: 100%;
+        margin-top: 160px;
+        line-height: 20px;
+    }
+
+    .menuAtivar ul li {
+        list-style: none;
+    }
+
+    .imagemX{
+        margin-left: 10px;
+    }
+
+    .menuPerfil{
+        display: none;
+    }
  
      .center h1 {
          font-size: 2.0em;
+     }
+
+     .menu-2{
+        justify-content: space-between;
      }
  
      .box-container {
@@ -1212,7 +1318,7 @@ color: var(--color-darker)   ;
          width: 100px;
      }
  
-     .menuEsquerda, .menuDireita {
+     .menuEsquerda, .menuDireita, .menuDireitoAcesso {
          display: none;
      }
  
@@ -1231,6 +1337,42 @@ color: var(--color-darker)   ;
      .mmLine{
          height: 2px;
      }
+
+     .menuMobile-2{
+        margin-right: 0;
+    }
+
+     .menuMobile-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .mmLine-2{
+        height: 2px;
+    }
+
+    .menuAtivar {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        text-align: center;
+        width: 100vw;
+        background: linear-gradient(269.83deg, var(--color-primary) 8.79%, var(--color-secondary) 65.48%);
+        opacity: 100%;
+        height: 100%;
+        margin-top: 160px;
+        line-height: 20px;
+    }
+
+    .imagemX{
+        margin-left: 10px;
+    }
+
+    .menuPerfil{
+        display: none;
+    }
       
      .titulo {
          height: 75px;
