@@ -35,7 +35,7 @@ O objetivo da **XTech** é facilitar a busca por empregos em áreas da tecnologi
 	
 ---
 
-## Documentação do desenvolvimento e evolução do projeto
+## :Documentação do desenvolvimento e evolução do projeto
 
 Esta documentação tem como objetivo apresentar as especificações do projeto assim como o seu entendimento técinico e processo de construcão de cada etapa .
 
