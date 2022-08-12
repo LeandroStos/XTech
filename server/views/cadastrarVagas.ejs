@@ -1,0 +1,116 @@
+<%- include('./partials/head'); %>
+
+<%- include('./partials/headerEmpresa'); %>
+
+<main>
+        <div class="box_formulario_vagas">
+                <form action="/empresas/cadastrarVagas" method="POST">
+                        <fieldset>
+                                <div class="center_vagas">
+                                <h1>Cadastro de Vagas</h1>
+                                </div>
+                                <br>
+                                <div class="inputBox">
+                                        <input type="text" name="funcao" id = "funcao" class="inputUser_T" required />
+                                        <label for="funcao" class="label_input">Função</label>
+                                        
+                                </div>
+                                <br></br>
+
+                                <div class="inputBox">
+                                <input type="number" name="salario"class="inputUser_T" required>
+                                <label for="salario" class="label_input">Salário</label>
+                                
+                                </div>
+                                <br></br>
+
+
+                                <p class="sexo"><b>Modalidade</b></p>
+                                <br>
+                                <input type="radio" id="feminino" name="modalidade" value="efetivo" required />
+                                <label for="efetivo" class="radio">Efetivo / CLT</label>
+
+                                <input type="radio" id="masculino" name="modalidade" value="masculino" required />
+                                <label for="pessoa juridica" class="radio">Pessoa Juridica</label>
+
+                                <input type="radio" id="masculino" name="modalidade" value="masculino" required />
+                                <label for="estagio" class="radio">Estágio</label>
+                        
+                                <br></br>
+
+                                <br></br>
+                                <p class="Habilidades"><b>Campo de Atuação:</b></p>
+                                <br>
+                                <input type="radio" id="Front-end" name="segmento" value="Front" required />
+
+                                <label for="Front-end" class="radio">Front-end</label>
+                                <input type="radio" id="Beck-end" name="segmento" value="Beck-end" required />
+
+                                <label for="Beck-end" class="radio">Back-end</label>
+                                <input type="radio" id="Full-Stack" name="segmento" value="Full-Stack" required />
+
+                                <label for="Full-Stack" name="segmento" class="radio">Full-Stack</label>
+
+                                <br></br>
+
+                                <br></br>
+                                <p class="sexo"><b>Habilidades Necessárias:</b></p>
+                                <br>
+                                <title><b>linguagens</b></title>    
+                                <form action="">
+                                <div class="Seletor" >
+                                        <select class="linguagens" name="habilidades">
+
+                                        <option value="C++">C++</option>
+                                        <option value="Css">Css</option>
+                                        <option value="HTML">HTML</option>
+                                        <option value="JavaScript">JavaScript</option>
+                                        <option value="Java">Java</option>
+                                        <option value="Python">Python</option>
+                                        <option value="typescript">typescript</option>
+                                        <option value="GO">GO</option>
+                                        <option value="Ruby">Ruby</option>
+
+                                        </select>
+                                </div>
+
+                                <br></br>
+
+
+                                </form>
+
+                                <div class="inputBox">
+                                        <label for="data_nascimento" class="date"><b>Data de Cadastro da Vaga:</b></label>
+                                        <input type="date" name="data" id="data_nascimento" class="inputDate" />
+
+                                </div>
+                                <br></br>
+                                <div class="inputBox">
+                                        <input type="text" name="cidade" id="cidade" class="inputUser_T" required />
+                                        <label for="cidade" class="label_input">Cidade</label>
+                                </div>
+                                <br></br>
+                                <div class="inputBox">
+                                        <input type="text" name="estado" id="estado" class="inputUser_T" required />
+                                        <label for="estado" class="label_input">Estado</label>
+                                </div>
+                                <br></br>
+                                <div class="btn-center">
+                                        <!-- <input type="submit" name="submit" id="submit" class="submit"/> -->
+                                        <button type="submit" name="submit" id="submit" class="submit"
+                                                value="Submit">CADASTRAR</button>
+                                 </div>
+
+
+
+
+                        </fieldset>
+                </form>
+
+
+
+        </div>
+
+</main>
+
+<%- include('./partials/footer'); %>

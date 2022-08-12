@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
                 integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
                 crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="backend/public/stylesheets/style.css" type="text/css">
+        <link rel="stylesheet" href="server/public/stylesheets/style.css" type="text/css">
         <link rel="icon" type="image/png" sizes="50x50" href="images/favicon.png">
         <title>XTech | O seu primeiro passo na programação!</title>
 </head>
@@ -21,7 +21,7 @@
         <header>
                 <div class="menu-2">
                         <div class="imagemX">
-                                <img src="backend/public/images/logo_vertical.png" title="Xtech" />
+                                <img src="server/public/images/logo_vertical.png" title="Xtech" />
                         </div>
                         <!--imagemX-->
                         <div class="menuDireitoAcesso">
@@ -46,15 +46,15 @@
                                         </div>
                                         <br>
                                         <div class="inputBox">
-                                                <input type="text" name="label_input" id = "nome" class="inputUser_T" required />
-                                                <label for="nome" class="label_input">Função</label>
+                                                <input type="text" name="funcao" id = "funcao" class="inputUser_T" required />
+                                                <label for="funcao" class="label_input">Função</label>
                                                 
                                         </div>
                                         <br></br>
 
                                         <div class="inputBox">
-                                        <input type="text" name="email"class="inputUser_T" required>
-                                        <label for="email" class="label_input">Salário</label>
+                                        <input type="number" name="salario"class="inputUser_T" required>
+                                        <label for="salario" class="label_input">Salário</label>
                                         
                                         </div>
                                         <br></br>
@@ -62,29 +62,29 @@
 
                                         <p class="sexo"><b>Modalidade</b></p>
                                         <br>
-                                        <input type="radio" id="feminino" name="genero" value="feminino" required />
-                                        <label for="feminino" class="radio">Efetivo / CLT</label>
+                                        <input type="radio" id="feminino" name="modalidade" value="efetivo" required />
+                                        <label for="efetivo" class="radio">Efetivo / CLT</label>
 
-                                        <input type="radio" id="masculino" name="genero" value="masculino" required />
-                                        <label for="masculino" class="radio">Pessoa Juridica</label>
+                                        <input type="radio" id="masculino" name="modalidade" value="masculino" required />
+                                        <label for="pessoa juridica" class="radio">Pessoa Juridica</label>
 
-                                        <input type="radio" id="masculino" name="genero" value="masculino" required />
-                                        <label for="masculino" class="radio">Estágio</label>
+                                        <input type="radio" id="masculino" name="modalidade" value="masculino" required />
+                                        <label for="estagio" class="radio">Estágio</label>
                                 
                                         <br></br>
 
                                         <br></br>
                                         <p class="Habilidades"><b>Campo de Atuação:</b></p>
                                         <br>
-                                        <input type="radio" id="Front-end" name="Segmento" value="Front" required />
+                                        <input type="radio" id="Front-end" name="segmento" value="Front" required />
 
                                         <label for="Front-end" class="radio">Front-end</label>
-                                        <input type="radio" id="Beck-end" name="Segmento" value="Beck-end" required />
+                                        <input type="radio" id="Beck-end" name="segmento" value="Beck-end" required />
 
-                                        <label for="Beck-end" class="radio">Beck-end</label>
-                                        <input type="radio" id="Full-Stack" name="Segmento" value="Full-Stack" required />
+                                        <label for="Beck-end" class="radio">Back-end</label>
+                                        <input type="radio" id="Full-Stack" name="segmento" value="Full-Stack" required />
 
-                                        <label for="Full-Stack" class="radio">Full-Stack</label>
+                                        <label for="Full-Stack" name="segmento" class="radio">Full-Stack</label>
 
                                         <br></br>
 
@@ -94,7 +94,7 @@
                                         <title><b>linguagens</b></title>    
                                         <form action="">
                                         <div class="Seletor" >
-                                                <select class="linguagens" name="list">
+                                                <select class="linguagens" name="habilidades">
 
                                                 <option value="C++">C++</option>
                                                 <option value="Css">Css</option>
@@ -116,16 +116,7 @@
 
                                         <div class="inputBox">
                                                 <label for="data_nascimento" class="date"><b>Data de Cadastro da Vaga:</b></label>
-                                                <input type="date" name="data_nascimento" id="data_nascimento" class="inputDate" />
-
-
-                                        </div>
-                                        <br></br>
-                                        <div class="inputBox">
-                                                <input type="text" name="endereco" id="endereco" class="inputUser_T"  required />
-                                                <label for="endereco" class="label_input">Empresa</label>
-                                                
-                                        <br></br>
+                                                <input type="date" name="data" id="data_nascimento" class="inputDate" />
 
                                         </div>
                                         <br></br>
@@ -159,7 +150,7 @@
 
 
         <div class="logo_cinza">
-                <img src="backend/public/images/XTECH.png" title="Xtech" />
+                <img src="server/public/images/XTECH.png" title="Xtech" />
         </div>
 
 

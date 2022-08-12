@@ -1,0 +1,28 @@
+<%- include('./partials/head'); %>
+
+<%- include('./partials/headerEmpresa'); %>
+
+<main>
+    <div class="centerPainel">
+        <div class="tituloVagas">
+            <h1>Vagas cadastradas</h1>
+        </div>
+        <ul class="painelVagas">
+            <% vagas.forEach(vaga => { %>
+                <li class="listaVagas">
+                    <p><%= vaga.empresaId %></p>
+                    <h2><%= vaga.funcao %></h2>
+                    <p>R$<%= vaga.salario %></p>
+                    <button style="background:red" onclick="apagar()">Delete</button>
+                </li>
+            <% }) %>
+        </ul>
+    </div>
+    <script>
+        function apagar(id){
+            
+        }
+    </script>
+</main>
+    <!--center-->
+<%- include('./partials/footer'); %>

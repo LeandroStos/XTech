@@ -1,0 +1,21 @@
+<%- include('./partials/head'); %>
+
+<%- include('./partials/header'); %>
+
+<main>
+    <div class="center">
+        <h1 class="titulo">São mais de <b>999</b> vagas para<br> você em mais de <b>99</b><br> empresas!</h1>
+        <% if(locals.errors && errors.erro) { %>
+            <p style="color:red" text-align="center"><%= errors.erro.message %></p>
+        <% } %>
+        <div class="box-container">
+            <form action="/vagas" method="GET">
+                <button class="icone lupa"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input type="text" class="search"  name='busca' placeholder="Digite um cargo ou palavra chave">
+            </form>
+        </div>
+        <!--box-container-->
+    </div>
+</main>
+    <!--center-->
+<%- include('./partials/footer'); %>

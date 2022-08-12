@@ -1,0 +1,22 @@
+<%- include('./partials/head'); %>
+
+<%- include('./partials/header'); %>
+
+<main>
+    <div class="centerPainel">
+        <div class="tituloVagas">
+            <h1>Total de vagas encontradas</h1>
+        </div>
+            <ul class="painelVagas">
+                <% vagas.forEach(vaga => { %>
+                    <li class="listaVagas">
+                        <p><%= vaga.empresaId %></p>
+                        <h2><%= vaga.funcao %></h2>
+                        <p>R$<%= vaga.salario %></p>
+                    </li>
+                <% }) %>
+            </ul>
+    </div>
+</main>
+    <!--center-->
+<%- include('./partials/footer'); %>
