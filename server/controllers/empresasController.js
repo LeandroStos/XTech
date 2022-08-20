@@ -16,10 +16,12 @@ const controller = {
     },
 
     vagasEmpresas: async (req, res) => {
+
         let vagas = await Vagas.findAll({
             where:{
                 empresaId: req.session.empresaLogado.id
-            }
+            },
+            include: "Empresa"
         })
         return res.render('vagasEmpresas', {
             vagas
@@ -32,7 +34,7 @@ const controller = {
                 id: req.params.id
             }
         })
-        return res.render('areaEmpresa');
+        return res.render('/vagasEmpresas/');
     },
 
     vagaRegister: async (req, res) => {

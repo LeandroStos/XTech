@@ -4,17 +4,14 @@
 
 <main>
         <div class="box_formulario">
-                <form action="/candidatos/registro" method="POST">
+                <form action="/candidatos/registro" method="POST" enctype="multipart/form-data">
                         <fieldset>
                                 <div class="center_Candidatos">
                                         <h1>Formulario Cadastro de Candidatos</h1>
-                                        <% if(locals.errors && errors.email) { %>
-                                                <p style="color:red" text-align="center"><%= errors.email.message %></p>
-                                        <% } %>
                                 </div>
                                 <br>
                                 <div class="inputBox">
-                                        <input type="text" name="nome" id = "name" class="inputUser_T" required />
+                                        <input type="text" name="nome" id = "nome" class="inputUser_T" required />
                                         <label for="nome" class="label_input">Nome completo</label>
                                         
                                 </div>
@@ -42,14 +39,13 @@
                                 <br></br>
                                 <p class="Habilidades"><b>Habilidades:</b></p>
                                 <br>
-                                <input type="radio" id="Front-end" name="segmento" value="Front" required />
-
+                                <input type="radio" id="Front-end" name="Segmento" value="Front" required />
                                 <label for="Front-end" class="radio">Front-end</label>
-                                <input type="radio" id="Beck-end" name="segmento" value="Beck-end" required />
 
-                                <label for="Beck-end" class="radio">Back-end</label>
-                                <input type="radio" id="Full-Stack" name="segmento" value="Full-Stack" required />
+                                <input type="radio" id="Back-end" name="Segmento" value="Beck-end" required />
+                                <label for="Back-end" class="radio">Back-end</label>
 
+                                <input type="radio" id="Full-Stack" name="Segmento" value="Full-Stack" required />
                                 <label for="Full-Stack" class="radio">Full-Stack</label>
 
                                 <br></br>
@@ -89,6 +85,30 @@
                                 </div>
                                 <br></br>
                                 <div class="inputBox">
+                                        <input type="number" name="celular" id="number" class="inputUser_T"  required />
+                                        <label for="celular" class="label_input">Celular</label>
+                                        
+                                        <br></br>
+
+                                </div>
+                                <br></br>
+                                <div class="inputBox">
+                                        <input type="text" name="github" id="github" class="inputUser_T"  required />
+                                        <label for="github" class="label_input">Github</label>
+                                        
+                                        <br></br>
+
+                                </div>
+                                <br></br>
+                                <div class="inputBox">
+                                        <input type="text" name="linkedin" id="linkedin" class="inputUser_T"  required />
+                                        <label for="linkedin" class="label_input">Linkedin</label>
+                                        
+                                        <br></br>
+
+                                </div>
+                                <br></br>
+                                <div class="inputBox">
                                         <input type="text" name="endereco" id="endereco" class="inputUser_T"  required />
                                         <label for="endereco" class="label_input">Endereço</label>
                                         
@@ -107,10 +127,21 @@
                                 </div>
                                 <br></br>
                                 <div class="inputBox">
-                                        <label for="senha" class="input-senha2">Senha</label>
+                                        <input type="file" id="avatar" name="avatar"
+                                        accept="image/png, image/jpeg" class="inputUser_T" />
+                                        <label for="avatar" class="label_input">Foto perfil</label>
+                                </div>
+                                <br></br>
+                                <div class="inputBox">
+                                        <h4 style="color:#fff">Sobre mim</h4>
+                                        <textarea id="sobre" name="sobre" rows="5" cols="33"></textarea>
+                                </div>
+                                <br></br>
+                                <div class="inputBox">
+                                        <label for="estado" class="input-senha2">Senha</label>
                                         <input type="password" name="password" id="password" class="input-senha" required />
                                 </div>
-
+                                <br></br>
                                 <div class="btn-center">
                                         <!-- <input type="submit" name="submit" id="submit" class="submit"/> -->
                                         <button type="submit" name="submit" id="submit" class="submit"

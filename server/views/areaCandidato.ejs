@@ -7,7 +7,8 @@
     <div class="left">
         <h3>Bem-vindo</h3>
         <p><%= candidatoLogado.nome %></p>
-        <img src="https://portal1.iff.edu.br/desenvolvimento-institucional/imagens/avatar.jpg/@@images/image.jpeg" alt="user" width="100">
+        <!--<img src="https://portal1.iff.edu.br/desenvolvimento-institucional/imagens/avatar.jpg/@@images/image.jpeg" alt="user" width="100">-->
+        <img src="/images/avatars/<%= candidatoLogado.avatar %>" width="100px">
     </div>
     <div class="right">
         <div class="info">
@@ -18,8 +19,14 @@
                     <p><%= candidatoLogado.email %></p>
                     <h4>Genero</h4>
                     <p><%= candidatoLogado.genero %></p>
+                    <h4>Github</h4>
+                    <p><%= candidatoLogado.github %></p>
+                    <h4>Linkedin</h4>
+                    <p><%= candidatoLogado.github %></p>
                  </div>
                  <div class="data">
+                  <h4>Celular</h4>
+                  <p><%= candidatoLogado.celular %></p>
                    <h4>Endereço</h4>
                    <p><%= candidatoLogado.endereco %></p>
                    <h4>Cidade</h4>
@@ -45,6 +52,7 @@
         </div>
         <div class="projects">
           <h3>Sobre</h3>
+          <p><%= candidatoLogado.sobre%></p>
           <div class="projects_data">
                   
           </div>  

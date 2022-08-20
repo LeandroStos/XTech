@@ -13,7 +13,7 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
       Vagas.belongsTo(models.Empresas, {
         foreignKey: 'empresaId',
-        as: 'empresa'
+        as: 'Empresa'
       })
     }
   }
@@ -25,6 +25,7 @@ module.exports = (sequelize, DataTypes) => {
     habilidades: DataTypes.STRING,
     data: DataTypes.DATE,
     empresaId: DataTypes.INTEGER,
+    contato: DataTypes.STRING,
     cidade: DataTypes.STRING,
     estado: DataTypes.STRING
   }, {

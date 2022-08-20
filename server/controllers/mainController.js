@@ -1,33 +1,44 @@
-const { Vagas } = require('../database/models');
+const { Vagas, Empresas } = require('../database/models');
 const Sequelize = require('sequelize');
 const Op = Sequelize.Op;
 
 const controller = {
-    main: (req, res) => {
-        res.render('main');
+    main: async (req, res) => {
+        let empresas = await Empresas.findAll();
+        let vagas = await Vagas.findAll();
+        res.render('main', {
+            empresas: empresas.length,
+            vagas: vagas.length
+        });
     },
     search: async (req, res) => {
-        let {busca} = req.query
-        if(busca){
+        let { busca } = req.query
+        if (busca) {
             let vagas = await Vagas.findAll({
-                where:{
-                    funcao:{
-                        [Op.like]:`%${busca}%`
+                where: {
+                    funcao: {
+                        [Op.like]: `%${busca}%`
                     }
                 },
-                    order:[
-                        ['createdAt','DESC']
-                    ]
+                order: [
+                    ['createdAt', 'DESC']
+                ],
+                include: "Empresa"
+
             });
             console.log(vagas);
-            return res.render('vagas', {vagas});
+            return res.render('vagas', { vagas });
         } else {
-            return res.render('main', {
-                errors:{
+            let empresas = await Empresas.findAll();
+            let vagas = await Vagas.findAll();
+            res.render('main', {
+                empresas: empresas.length,
+                vagas: vagas.length,
+                errors: {
                     erro: {
                         message: "Sem resultado para busca!"
                     }
-            }            
+                }
 
             })
         }

@@ -34,6 +34,9 @@ module.exports = {
           key: 'id'
         }
       },
+      contato: {
+        type: Sequelize.STRING
+      },
       cidade: {
         type: Sequelize.STRING
       },

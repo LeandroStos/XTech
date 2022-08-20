@@ -20,6 +20,7 @@ module.exports = {
           habilidades: "Back-end",
           data: '2017-10-25',
           empresaId: 1,
+          contato: 'email@email.com',
           cidade: "São Paulo",
           estado: "São Paulo",
           createdAt: new Date(),

@@ -10,9 +10,11 @@
             <ul class="painelVagas">
                 <% vagas.forEach(vaga => { %>
                     <li class="listaVagas">
-                        <p><%= vaga.empresaId %></p>
                         <h2><%= vaga.funcao %></h2>
-                        <p>R$<%= vaga.salario %></p>
+                        <p><%= vaga.Empresa.nome %></p>
+                        <p><%= vaga.cidade %></p>
+                        <p>Salário: R$<%= vaga.salario %></p>
+                        <a href="mailto:<%= vaga.contato %>">Envie currículo para: <%= vaga.contato %></p>
                     </li>
                 <% }) %>
             </ul>

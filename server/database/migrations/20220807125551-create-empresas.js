@@ -17,6 +17,9 @@ module.exports = {
       email: {
         type: Sequelize.STRING
       },
+      linkedin: {
+        type: Sequelize.STRING
+      },
       endereco: {
         type: Sequelize.STRING
       },
@@ -25,6 +28,9 @@ module.exports = {
       },
       estado: {
         type: Sequelize.STRING
+      },
+      sobre: {
+        type: Sequelize.TEXT
       },
       password: {
         type: Sequelize.STRING

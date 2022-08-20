@@ -141,6 +141,14 @@ header .menu {
     margin-left: 2vw;
 }
 
+.options a:hover{
+    color:#101527;
+}
+
+.options-2 a:hover{
+    color: var(--color-secondary);
+}
+
 [title="Entrar"]{
     margin-right: 3vw;
 }
@@ -154,9 +162,6 @@ header .menu {
 /* termina aqui mudanças feitas */
 
 /*Ajustar a cor do link a*/
-a:hover {
-    color: var(--color-darker);
-}
 
 a {
     color: var(--color-lighter);
@@ -722,6 +727,21 @@ label.checkbox{
      margin-right: 30px;
    }
 
+   .inputBox2{
+    position: relative;
+
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  #sobre {
+    resize:none;
+    color: #fff;
+    background-color: #101527;
+    width: 250px;
+    height: 80px;
+  }
+
    .input-senha{
      margin-left: 10px;
      background-color: #101527;
@@ -1074,11 +1094,7 @@ cursor: pointer;
 .opcoes ul a{
 text-decoration: none;
 color: #fff;    
-}
-
-.opcoes a:hover{
-color: var(--color-darker)   ;
-}  
+} 
 
 .wrapper{
     width: 80vw;
@@ -1218,16 +1234,49 @@ color: var(--color-darker)   ;
 
 .centerPainel ul li {
     list-style: none;
+    color: var(--color-light);
+}
+
+.centerPainel ul li h2{
+    color:#00BCDA;
 }
 
 .listaVagas{
     width: 60%;
-    background-color: #adffff;
+    background-color: var(--color-darker); 
     padding: 20px 18px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    line-height: 23px;
+    transform: translate(2%, 2%);
     margin-bottom: 15px;
-    min-width: 150px;
+    min-width: 270px;
 }
 
+#teste{
+    display: absolute;
+    float: right;
+    color: #fff;
+    border: none;
+    padding: 3px;
+    border-radius: 3px;
+    background-color: red;
+    transition: 4s;
+}
+
+#teste:hover{
+    width: 50px;
+    height: 25px;
+    background-color: #00BCDA;
+}
+
+.centerPainel::-webkit-scrollbar {
+    background-color: var(--color-dark);   
+    border-radius: 20px;       
+    border: 3px solid #fff;  
+  }
 
 
 /* fim configurações página vagas */

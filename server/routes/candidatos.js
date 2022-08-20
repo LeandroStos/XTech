@@ -7,6 +7,7 @@ const controller = require('../controllers/candidatosController');
 /* Middlewares */
 const logadoUsuario = require('../middlewares/logadoUsuario');
 const naoLogado = require('../middlewares/naoLogado');
+const middlewareMulter = require('../middlewares/middlewareMulter');
 
 // Formulário de acesso
 router.get('/acessoCandidato', logadoUsuario, controller.acesso);
@@ -15,7 +16,7 @@ router.get('/acessoCandidato', logadoUsuario, controller.acesso);
 router.get('/registro', logadoUsuario, controller.registro);
 
 // Processar registro
-router.post('/registro', controller.processRegister);
+router.post('/registro', middlewareMulter.upload, controller.processRegister);
 
 // Formulário de acesso
 router.post('/acessoCandidato', controller.acessoProcess);

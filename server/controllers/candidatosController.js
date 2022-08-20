@@ -14,9 +14,10 @@ const controller = {
 
         let candidatosToCreate = {
             ...req.body,
+            avatar: req.file.filename,
             password: bcrypt.hashSync(req.body.password, 10)
         }
-
+        
         try {
             let candidatoCreated = await Candidatos.create(candidatosToCreate);
             return res.redirect('/candidatos/acessoCandidato');
@@ -64,6 +65,7 @@ const controller = {
             }
         })
     },
+
     profile: (req,res) => {
         console.log(req.session.candidatoLogado)
         return res.render('areaCandidato', {

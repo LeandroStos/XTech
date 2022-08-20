@@ -5,22 +5,27 @@
 <main>
     <div class="centerPainel">
         <div class="tituloVagas">
-            <h1>Vagas cadastradas</h1>
+            <h1>Vagas enviadas</h1>
         </div>
         <ul class="painelVagas">
             <% vagas.forEach(vaga => { %>
                 <li class="listaVagas">
-                    <p><%= vaga.empresaId %></p>
+                    <p><%= vaga.Empresa.nome%></p>
+                    <form action="/empresas/vagasEmpresas/<%= vaga.id %>?_method=DELETE" method="POST">
+                        <button id="teste"onclick="apagar()">Deletar</button>
+                    </form>
                     <h2><%= vaga.funcao %></h2>
                     <p>R$<%= vaga.salario %></p>
-                    <button style="background:red" onclick="apagar()">Delete</button>
                 </li>
             <% }) %>
         </ul>
     </div>
     <script>
         function apagar(id){
-            
+            fetch('http://localhost:3000/empresas/vagasEmpresas' + id, {method:'DELETE'})
+            .then(() => {
+                location.reload();
+            });
         }
     </script>
 </main>

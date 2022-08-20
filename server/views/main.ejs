@@ -4,7 +4,7 @@
 
 <main>
     <div class="center">
-        <h1 class="titulo">São mais de <b>999</b> vagas para<br> você em mais de <b>99</b><br> empresas!</h1>
+        <h1 class="titulo">São mais de <b><%= vagas %></b> vagas para<br> você em mais de <b><%= empresas %></b><br> empresas!</h1>
         <% if(locals.errors && errors.erro) { %>
             <p style="color:red" text-align="center"><%= errors.erro.message %></p>
         <% } %>
