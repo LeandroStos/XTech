@@ -35,9 +35,46 @@ O objetivo da **XTech** é facilitar a busca por empregos em áreas da tecnologi
 	
 ---
 
-## :Documentação do desenvolvimento e evolução do projeto
+## Documentação do desenvolvimento e evolução do projeto
 
 Esta documentação tem como objetivo apresentar as especificações do projeto assim como o seu entendimento técinico e processo de construcão de cada etapa .
+
+Este projeto faz parte do curso Desenvolvedor Web Full Stack da  Digital House .
+
+---
+
+## Definições e início do projeto
+
+Definição do tema, reunião com a equipe para definir o tema do projeto. XTECH.
+
+Escolha e definições de quantidade de tela: Apartir desta etapa será definido o início do projeto com as responsabibilades de cada integrante da equipe.
+
+Os escopos de telas não representa o layout final e tem como finalidade apenas definições e para o desenvolvimento e a evolução do projeto.
+
+---
+
+## Páginas
+
+Home: Menu Esquerdo: Acesso, entrar, cadastre-se . Menu Direito: Sobre e Políticas de Privacidade 
+
+Cadastro: Cadastro de Candidatos e Empresas
+
+Tela de login: Login de usuários com e-mail e senha
+
+Canditados: Campos para cadastro de dados e curriculo,consulta de vagas, vagas a que se candidatou 
+
+Empresas: Campos para cadastro de dados, publicação de vagas, busca de candidatos
+
+---
+## Tecnologias 
+
+Figma, Gira, node.js, mysql, postman,vscode,
+
+---
+
+## Metodologias e linguagens
+
+Express, Sequelize, html, javascript, json, css, ejs.
 
 ---
 ## :studio_microphone: Quem fez ?
