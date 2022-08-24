@@ -9,7 +9,8 @@
 
 ## :package: RoadMap
 
-Novos caminhos serão traçados toda a semana durante as aulas.
+Nosso objetivo é aproximar Empresas & candidatos.
+Criando um Endpoint que tornará a sua evolução na carreira mais tranquila.
 
 *New paths will be traced throughout the week during classes.*
 
