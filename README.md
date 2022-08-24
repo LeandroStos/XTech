@@ -1,11 +1,10 @@
 <p align="center" >
-	
+
 <img src=".github\logo.png" alt="XTECH" width="150"/>
-	
+
 </p>
 
 ---
-
 
 ## :package: RoadMap
 
@@ -13,9 +12,8 @@ Novos caminhos serão traçados toda a semana durante as aulas.
 
 *New paths will be traced throughout the week during classes.*
 
- - [x] Wireframe
- - [ ] Template 
-
+[x] Wireframe
+[ ] Template
 
 ---
 
@@ -32,7 +30,7 @@ O objetivo da **XTech** é facilitar a busca por empregos em áreas da tecnologi
 <p  align="center">
 <img  alt="Index"  src=".github/index.png"  width="100%">
 </p>
-	
+
 ---
 
 ## Documentação do desenvolvimento e evolução do projeto
