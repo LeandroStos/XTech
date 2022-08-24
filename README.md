@@ -12,7 +12,6 @@
 Nosso objetivo é aproximar Empresas & candidatos.
 Criando um Endpoint que tornará a sua evolução na carreira mais tranquila.
 
-*New paths will be traced throughout the week during classes.*
 
  - [x] Wireframe
  - [ ] Template 
